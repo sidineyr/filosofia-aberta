@@ -4,25 +4,35 @@
 
 Projeto educacional gratuito de leitura orientada dos clássicos da Filosofia, concebido por **Sidiney Rodrigues**.
 
+## Estado atual
+
+**Versão piloto.** O site possui um módulo completo disponível — Sócrates via *Apologia* de Platão. Os demais pensadores apresentados na cronologia são um **roteiro editorial planejado**, e não aulas já concluídas.
+
 ## Objetivo
 
-Ensinar iniciantes e leitores em geral a ler fontes filosóficas primárias com autonomia, contexto e rigor, distinguindo fato histórico, texto primário, interpretação acadêmica e síntese pedagógica.
+Ajudar iniciantes e leitores em geral a ler fontes filosóficas primárias com autonomia, contexto e rigor, distinguindo texto primário, testemunho histórico, interpretação acadêmica, síntese pedagógica e resposta pessoal.
 
-## Versão inicial
+## Recursos
 
-- percurso cronológico com 12 pensadores;
-- módulo-piloto completo sobre Sócrates via *Apologia* de Platão;
-- anotações locais, sem cadastro;
+- percurso cronológico explicitamente marcado por estado (`disponível` / `planejado`);
+- módulo-piloto de leitura orientada;
+- caderno local, sem cadastro;
 - modo de foco e controles de leitura;
-- referências verificáveis;
-- percursos complementares de gênero, Áfricas e diásporas, filosofias asiáticas, pensamento árabe e islâmico, América Latina, Brasil e pensamentos indígenas;
-- interface responsiva e imprimível.
+- referências classificadas por função;
+- eixos editoriais para ampliar criticamente o percurso;
+- interface responsiva, acessível e imprimível;
+- metadados básicos para indexação.
 
-## Fontes do módulo-piloto
+## Fontes verificadas do módulo-piloto
 
-- Platão, *Apologia* 38a — Perseus Digital Library.
+- Platão, *Apologia* — Perseus Catalog.
 - Platão, *Apology*, tradução de Benjamin Jowett — Project Gutenberg eBook #1656.
 - Stanford Encyclopedia of Philosophy, verbete “Socrates”.
+- Internet Encyclopedia of Philosophy, verbete “Socrates”.
+
+## Revisão
+
+Consulte [`QA_REVIEW.md`](QA_REVIEW.md) para o registro da revisão pedagógica realizada sob a perspectiva de um pesquisador aprendiz.
 
 ## Direitos e créditos
 
