@@ -1,0 +1,23 @@
+name: Notify IndexNow
+
+on:
+  workflow_run:
+    workflows: ["Deploy GitHub Pages"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify IndexNow-compatible search engines
+        run: |
+          curl --fail-with-body --silent --show-error --get \
+            'https://api.indexnow.org/indexnow' \
+            --data-urlencode 'url=https://sidineyr.github.io/filosofia-aberta/' \
+            --data-urlencode 'key=f00d399c806512497c4920ab7fabc87f' \
+            --data-urlencode 'keyLocation=https://sidineyr.github.io/filosofia-aberta/f00d399c806512497c4920ab7fabc87f.txt'
