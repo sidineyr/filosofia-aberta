@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sidineyr.github.io/filosofia-aberta/sitemap.xml
