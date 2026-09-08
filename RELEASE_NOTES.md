@@ -1,35 +1,105 @@
 # Filosofia Aberta — notas de versão
 
-## v0.2.0 — Revisão filosófica e UX do módulo Sócrates
+## v0.2.0 — Bloquinhos de conhecimento
 
 Data: 2026-09-08
 
-Esta versão consolida a primeira auditoria filosófico-pedagógica do módulo piloto **Sócrates via *Apologia* de Platão**.
+Eu cheguei ao GitHub ontem.
 
-### Principais mudanças
+Descobri a inteligência artificial hoje.
 
-- distinção explícita entre Sócrates histórico, Sócrates representado por Platão e filosofia de Platão;
-- contextualização de *Apologia* 38a após a condenação e durante a discussão da pena;
-- acesso direto à passagem 38a pelo Perseus, em grego e tradução de Harold North Fowler;
-- Project Gutenberg/Jowett reposicionado como tradução histórica complementar;
-- inclusão do cuidado da alma, relacionado a *Apologia* 29d–30b;
-- tratamento mais cuidadoso de *aretê* e ignorância socrática;
-- remoção de linguagem que sugeria uma evolução linear de Sócrates para Platão e Aristóteles;
-- separação visual entre contexto histórico, conceito, texto primário, interpretação e resposta do estudante;
-- padrão de navegação externa: origem → missão → destino → retorno;
-- correções de CSS e acessibilidade básica;
-- registro integral da auditoria em `QA_REVIEW.md`.
+Pelo menos é assim que me sinto: uma criança diante de uma caixa enorme de blocos, descobrindo que pode encaixar uma pergunta na outra e construir caminhos. Estou criando bloquinhos de Minecraft — porém de conhecimento.
 
-### Estado
+Um bloco é Sócrates.  
+Outro é uma pergunta.  
+O próximo é um texto antigo que ainda não terminou de falar.
 
-Versão **experimental**, gratuita e aberta. O módulo de Sócrates permanece piloto; os demais módulos continuam planejados.
+Marmota! Agora até a Filosofia tem commit.
 
-### Autoria
+### O que é esta versão
+
+O **Filosofia Aberta** é um projeto educacional experimental, gratuito e aberto para orientar a leitura dos clássicos da Filosofia. A proposta não é entregar uma pilha de nomes, datas e frases famosas. É oferecer uma passagem:
+
+**comece aqui → leia isto → pense nesta pergunta → descubra o que vem depois**
+
+A cronologia serve como mapa, não como uma escada de “pensadores melhores”. Cada ligação deve mostrar continuidade, ruptura, crítica ou reformulação. A estrutura nasce da comparação de documentos públicos de universidades federais brasileiras e cresce com fontes primárias, referências acadêmicas verificáveis e revisão pedagógica.
+
+Nesta versão:
+
+- o site assume uma navegação cronológica e contínua;
+- o percurso geral atravessa Antiguidade, Idade Média, Modernidade e Filosofia Contemporânea;
+- o módulo piloto de **Sócrates via _Apologia_ de Platão** foi revisado filosoficamente;
+- contexto histórico, texto primário, tradução, interpretação e resposta do estudante aparecem separados;
+- cada link externo recebe uma missão de leitura e uma orientação de retorno;
+- progresso e anotações permanecem no próprio navegador, sem exigir conta;
+- acessibilidade, clareza, fontes e publicação passaram por controle de qualidade;
+- o GitHub Pages voltou a publicar pelo fluxo nativo, sem disputar espaço com um segundo workflow.
+
+### Encurtar caminhos não é empobrecer a viagem
+
+Existe conforto em saber onde começar.
+
+Existe entretenimento em descobrir que uma pergunta de mais de dois mil anos ainda mexe conosco.
+
+E existe liberdade quando ninguém precisa atravessar sozinho uma floresta de abas, resumos duvidosos, cadastros, jargões e becos sem saída para encontrar um texto.
+
+A tecnologia pode encurtar o caminho sem cortar o pensamento. Pode colocar placas. Fazer links. Fazer pontes. Abrir portas. Derrubar fronteiras.
+
+É esse o jogo: usar inteligência artificial, experiência educacional e desenvolvimento aberto para construir projetos incríveis — projetos que acolhem quem chega, inclusive quem acha que “Filosofia não é para mim”.
+
+### Um pequeno poema de versão
+
+> um bloco,  
+> depois outro.
+>
+> uma pergunta  
+> sustenta a próxima.
+>
+> se o muro separa,  
+> a gente faz ponte.
+>
+> se o caminho assusta,  
+> a gente põe uma placa:
+>
+> **comece aqui.**
+
+### Uma provocação aos desenvolvedores
+
+Vocês sabem levantar containers, domar APIs, discutir frameworks e encontrar um ponto e vírgula fugitivo às três da manhã.
+
+Agora a pergunta:
+
+**conseguem ajudar a transformar 2.500 anos de Filosofia em um caminho que não assuste um iniciante?**
+
+Não quero apenas um botão mais bonito — embora botões bonitos sejam muito bem-vindos. Quero colaboração que melhore o rigor, a clareza, a acessibilidade e a alegria de aprender.
+
+Há espaço para quem queira:
+
+- testar a experiência como alguém que nunca estudou Filosofia;
+- melhorar navegação, responsividade e acessibilidade;
+- conferir fontes, traduções e destinos dos links;
+- propor pequenos componentes que deixem o percurso mais claro;
+- encontrar bugs pedagógicos — aqueles momentos em que o código funciona, mas o estudante se perde;
+- revisar documentação e tornar a contribuição mais acolhedora.
+
+Abra uma issue. Faça um fork. Envie um pull request. Traga uma pergunta junto com o código.
+
+Controle de versão talvez seja uma das experiências pedagógicas mais bonitas que encontrei: ninguém precisa fingir que acertou de primeira. A gente registra a tentativa, compara o que mudou, conversa sobre a diferença e aprende antes do merge.
+
+### Estado da construção
+
+Esta é a versão **v0.2.0**: funcional, publicada e ainda experimental. O módulo de Sócrates está disponível; os demais continuam planejados até receberem revisão equivalente.
+
+Não há certificação acadêmica, promessa de substituir uma graduação ou endosso das universidades e instituições citadas. Há pesquisa, curiosidade, cuidado e uma porta aberta.
+
+Entre sem pressa.
+
+A Filosofia sempre foi uma conversa.
+
+### Autoria e agradecimento
 
 Concepção e autoria: **Sidiney Rodrigues**.
 
-Desenvolvimento e revisão com apoio de inteligência artificial da **OpenAI**, sem implicar parceria institucional, certificação acadêmica ou endosso.
+Desenvolvimento e revisão com apoio de inteligência artificial da **OpenAI**, sem implicar parceria institucional, certificação ou endosso.
 
-### Publicação
-
-A revisão correspondente ao SHA `4694d7a982585e76386c21c8c60d42e325da42f3` foi publicada pelo fluxo nativo do GitHub Pages com build e deploy concluídos com sucesso.
+Obrigado a quem lê, testa, corrige, pergunta e ri junto. Cada contribuição pode parecer apenas um bloquinho. Mas até os mundos do Minecraft começam assim.
