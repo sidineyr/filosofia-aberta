@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "Filosofia Aberta"
+message: "Se este projeto for útil em trabalho acadêmico, educacional ou de divulgação, cite a autoria abaixo."
+type: software
+authors:
+  - family-names: "Rodrigues"
+    given-names: "Sidiney"
+repository-code: "https://github.com/sidineyr/filosofia-aberta"
+url: "https://sidineyr.github.io/filosofia-aberta/"
+version: "0.2.0"
+date-released: "2026-09-08"
+license: "CC-BY-4.0"
+abstract: "Projeto educacional experimental, gratuito e aberto para leitura orientada de clássicos da Filosofia, organizado pelo princípio 'Uma pergunta leva à próxima'."
+keywords:
+  - philosophy
+  - philosophy-education
+  - open-education
+  - socrates
+  - plato
+  - classical-philosophy
+  - guided-reading
+  - accessibility
