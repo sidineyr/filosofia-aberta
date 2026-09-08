@@ -95,18 +95,28 @@ A nova arquitetura foi construída explicitamente para fornecer elementos para e
 
 - CSS `.sr` corrigido.
 - Regra visual problemática do mapa corrigida.
-- Links externos principais conferidos contra os destinos oficiais/ acadêmicos.
+- Links externos principais conferidos contra os destinos oficiais/acadêmicos.
 - Links internos foram reestruturados para apontar somente para IDs existentes no novo documento.
 - Navegação móvel mantém os breakpoints já existentes e as novas camadas usam componentes responsivos existentes.
 - Controles de foco, tamanho de fonte, espaçamento, impressão e armazenamento local foram preservados.
+
+## Publicação verificada
+
+A revisão foi enviada para a branch `gh-pages` no SHA `4694d7a982585e76386c21c8c60d42e325da42f3`.
+
+GitHub Actions run **34218918384 — pages build and deployment**:
+
+- `build`: **success**;
+- `report-build-status`: **success**;
+- `deploy`: **success**.
+
+Portanto, a revisão filosófica e de UX correspondente a esse SHA foi publicada com sucesso pelo fluxo nativo do GitHub Pages.
 
 ## Limites da verificação
 
 Esta revisão não substitui teste com leitor de tela real, Lighthouse, axe, smartphone físico ou múltiplos navegadores. Esses testes continuam recomendados antes de chamar a versão de estável.
 
-## Publicação e indexação
-
-GitHub Pages já vinha sendo publicado pela branch `gh-pages`. Após esta revisão, a nova versão deve ser enviada para essa branch e o run nativo de Pages precisa concluir com sucesso antes de considerar as correções publicadas.
+## Indexação
 
 SEO, sitemap, robots e IndexNow continuam sendo mecanismos de descoberta; nenhum deles garante indexação.
 
