@@ -1,77 +1,92 @@
 # Filosofia Aberta
 
-**Uma pergunta leva à próxima.**
+**Comece aqui. Leia isto. Pense sobre esta pergunta. Agora veja o que aconteceu depois.**
 
 Projeto educacional **experimental, gratuito e em desenvolvimento** para leitura orientada dos clássicos da Filosofia, concebido por **Sidiney Rodrigues**.
 
+Site: https://sidineyr.github.io/filosofia-aberta/
+
+## Nova arquitetura
+
+O Filosofia Aberta deixou de ser organizado como catálogo de filósofos. A experiência principal agora é um **percurso cronológico, contínuo e orientado de leituras**.
+
+Fluxo pedagógico:
+
+**ler → compreender → refletir → continuar**
+
+A cronologia funciona como orientação histórica, não como tese de progresso inevitável. Relações entre autores devem indicar continuidade, ruptura, crítica ou reformulação.
+
+## Base acadêmica
+
+A estrutura é construída por comparação de documentos institucionais públicos de universidades brasileiras, especialmente PPCs, matrizes, ementas e planos de ensino.
+
+A matriz inicial inclui fontes da **UFSC, UFSCar, UFPel e UFBA**. Consulte [`RESEARCH_MATRIX.md`](RESEARCH_MATRIX.md) para metodologia, fontes e limites.
+
+Não existe no projeto a alegação de um único “currículo federal de Filosofia”. Recorrência aumenta relevância editorial, mas divergências permanecem visíveis.
+
 ## Estado atual
 
-O site possui um módulo piloto disponível — **Sócrates via *Apologia* de Platão**. Os demais pensadores apresentados no percurso são um roteiro editorial planejado e não devem ser confundidos com aulas concluídas.
+O site já apresenta o macropercurso:
 
-O projeto é tratado como laboratório pedagógico aberto: conteúdo, navegação e referências podem ser corrigidos quando novas verificações indicarem necessidade.
+**Antiguidade → Idade Média → Modernidade → Filosofia Contemporânea**
 
-## Objetivo
+O percurso antigo de trabalho segue:
 
-Ajudar iniciantes e leitores em geral a aprender a ler fontes filosóficas primárias com autonomia, contexto e rigor, distinguindo:
+**Pré-socráticos → Sofistas → Sócrates → Platão → Aristóteles → Helenismo → Neoplatonismo**
 
-- texto primário;
-- testemunho histórico;
-- edição e tradução;
-- referência acadêmica;
-- interpretação;
-- síntese pedagógica;
-- resposta pessoal do estudante.
+O módulo integralmente revisado e disponível continua sendo **Sócrates via a _Apologia_ de Platão**. Os demais pontos aparecem como planejados até passarem por revisão equivalente.
 
-## Princípio de navegação
+## Experiência de leitura
 
-O Filosofia Aberta não funciona como uma lista de links. Cada referência externa tem uma função no percurso. O padrão editorial é **origem → missão → destino → retorno**. Fontes externas abrem em nova aba para preservar a página principal como fio de investigação.
+Cada módulo disponível deve responder:
 
-## Princípio histórico-filosófico
+- Onde estou?
+- Qual é a pergunta filosófica?
+- O que vou ler?
+- Por que estou lendo isso?
+- O que preciso saber antes?
+- O que o texto realmente diz?
+- O que já é tradução ou interpretação?
+- O que devo pensar depois da leitura?
+- O que vem em seguida?
 
-A cronologia organiza o percurso, mas não é apresentada como evolução inevitável da Filosofia. As conexões entre módulos devem explicitar **continuidade, ruptura, discordância ou reformulação**. Uma pergunta pode reaparecer em outro autor sem que isso signifique que um filósofo simplesmente “leva” ao seguinte.
+O site mantém progresso e anotações localmente, sem exigir conta.
 
-## Política para Sócrates
+## Fontes do módulo disponível
 
-O módulo piloto distingue:
+- **Perseus — Platão, _Apologia_ 38a**: fonte primária de referência.
+- **Perseus Catalog — Plato, _Apology_**: identificação bibliográfica e tradição editorial.
+- **Stanford Encyclopedia of Philosophy — “Socrates”**: contexto histórico e problema socrático.
+- **Internet Encyclopedia of Philosophy — “Socrates”**: referência acadêmica complementar.
+- **Project Gutenberg — _Apology_, Benjamin Jowett**: tradução inglesa histórica complementar.
 
-- Sócrates histórico;
-- Sócrates representado nos textos de Platão;
-- filosofia de Platão.
+Consulte [`CREDITS_AND_SOURCES.md`](CREDITS_AND_SOURCES.md) para direitos, traduções e função pedagógica das fontes.
 
-Como Sócrates não deixou escritos, o site evita atribuições históricas absolutas quando a fonte não permite esse grau de certeza.
+## Qualidade
 
-## Fontes verificadas do módulo piloto
+Nenhum módulo deve ser marcado como disponível sem:
 
-- **Perseus — *Apologia* 38a**: fonte primária em grego e tradução inglesa de Harold North Fowler.
-- **Perseus Catalog — Plato, *Apology***: identificação bibliográfica, edições e tradução.
-- **Stanford Encyclopedia of Philosophy — “Socrates”**: contexto e problema socrático.
-- **Internet Encyclopedia of Philosophy — “Socrates”**: comparação de temas e interpretações, incluindo ignorância, cuidado da alma, vida examinada e *elenchus*.
-- **Project Gutenberg — *Apology*, Benjamin Jowett**: tradução inglesa histórica complementar, não substituta da fonte primária de referência.
+1. pergunta filosófica explícita;
+2. obra/passagem localizável;
+3. contexto verificável;
+4. distinção entre fonte, tradução, paráfrase e interpretação;
+5. referências verificadas;
+6. questões de leitura;
+7. transição para o próximo problema;
+8. revisão de acessibilidade;
+9. teste de links e navegação;
+10. publicação verificada.
 
-Consulte [`CREDITS_AND_SOURCES.md`](CREDITS_AND_SOURCES.md) para a função pedagógica de cada fonte, direitos, traduções e créditos.
-
-## Revisão e qualidade
-
-Consulte [`QA_REVIEW.md`](QA_REVIEW.md) para o registro da revisão pedagógica, filosófica e técnica.
-
-Critério editorial: nenhum módulo deve ser chamado de disponível antes de passar por revisão de fonte, sequência didática, interligações, acessibilidade, comportamento de links e teste de publicação.
+Consulte [`QA_REVIEW.md`](QA_REVIEW.md).
 
 ## Descoberta e indexação
 
-O repositório contém:
-
-- `robots.txt` permitindo rastreamento;
-- `sitemap.xml` com URL canônica;
-- `<link rel="canonical">` e metadados de indexação na página;
-- chave pública para **IndexNow**;
-- workflow preparado para notificar mecanismos compatíveis com IndexNow.
-
-**Importante:** preparar ou enviar uma URL para mecanismos de pesquisa não garante indexação. Google Search Console e Bing Webmaster Tools devem ser usados para acompanhar descoberta, rastreamento e indexação reais.
+O repositório mantém `robots.txt`, `sitemap.xml`, URL canônica, metadados de indexação e infraestrutura existente de descoberta. Esses mecanismos ajudam rastreamento, mas não garantem indexação por buscadores.
 
 ## Direitos e créditos
 
 Concepção e autoria: **Sidiney Rodrigues**.
 
-Conteúdo autoral produzido para o projeto: **CC BY 4.0**, salvo indicação diferente. Textos, traduções e recursos de terceiros mantêm suas próprias licenças e condições.
+Conteúdo autoral produzido para o projeto: **CC BY 4.0**, salvo indicação diferente. Materiais de terceiros preservam suas próprias licenças e condições.
 
 Desenvolvimento e revisão com apoio de inteligência artificial da **OpenAI**. Isso não implica parceria institucional, certificação acadêmica ou endosso das instituições citadas.
