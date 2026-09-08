@@ -12,11 +12,47 @@ Desenvolvimento e revisão técnica/editorial com apoio de inteligência artific
 
 O site deve ser entendido como laboratório pedagógico aberto. O conteúdo pode ser revisto quando novas fontes, edições, traduções, críticas ou resultados de teste indicarem necessidade de correção. Nenhum módulo deve ser apresentado como concluído sem revisão de fontes, coerência didática, acessibilidade e navegação.
 
+## Fontes curriculares da reconstrução cronológica
+
+As fontes abaixo orientam a arquitetura do percurso. Elas não são apresentadas como parceiras do projeto e não constituem um currículo único.
+
+### UFSC — Curso de Graduação em Filosofia
+
+URL: https://filosofia.ufsc.br/sobre-o-curso/
+
+Função: confirma a organização histórica em Filosofia Antiga, Medieval, Moderna e Contemporânea e a importância da História da Filosofia na formação acadêmica.
+
+### UFSC — Planos de ensino 2026.1
+
+URL: https://filosofia.ufsc.br/planos-2026-1/
+
+Função: verifica a presença contemporânea de componentes de História da Filosofia na oferta curricular.
+
+### UFSCar — Filosofia / ProGrad
+
+URL: https://www.prograd.ufscar.br/pt-br/cursos/cursos-oferecidos/filosofia
+
+Função: documenta a ênfase institucional em sólida formação de História da Filosofia e disponibiliza PPCs e matrizes curriculares.
+
+### UFPel — História da Filosofia Antiga
+
+URL: https://institucional.ufpel.edu.br/disciplinas/cod/0730135
+
+Função: fundamenta a sequência antiga de trabalho — origens, pré-socráticos, sofistas, Sócrates, Platão, Aristóteles, filosofias helenísticas, Plotino e neoplatonismo.
+
+### UFBA — Ementas do Departamento de Filosofia
+
+URL: https://dpsofia.ufba.br/ementas/disciplinas-gerais
+
+Função: reforça a presença da História da Filosofia Antiga no início do curso e sua convivência com componentes sistemáticos como Introdução à Filosofia, Lógica, Ética e Estética.
+
+Consulte também `RESEARCH_MATRIX.md` para a metodologia de comparação.
+
 ## Hierarquia editorial de fontes
 
-Quando a pergunta for “o que a obra diz?”, o projeto deve priorizar o **texto primário** e identificar edição/tradução. Catálogos acadêmicos ajudam a identificar a obra e sua tradição editorial; enciclopédias acadêmicas ajudam a contextualizar e comparar interpretações, mas não substituem a obra primária.
+Quando a pergunta for “o que a obra diz?”, o projeto prioriza o **texto primário** e identifica edição/tradução. Fontes curriculares ajudam a justificar o percurso; catálogos acadêmicos ajudam a identificar a obra; enciclopédias acadêmicas ajudam a contextualizar e comparar interpretações, mas não substituem a obra primária.
 
-## Fontes do módulo piloto — Sócrates / Platão
+## Fontes do módulo disponível — Sócrates / Platão
 
 ### Perseus — Platão, *Apologia* 38a
 
@@ -46,7 +82,7 @@ URL: https://iep.utm.edu/socrates/
 
 ### Project Gutenberg — Plato, *Apology*, tradução de Benjamin Jowett
 
-Função no percurso: **tradução inglesa histórica complementar**. Pode ser usada para comparação de escolhas tradutórias e leitura histórica, mas não é tratada como substituta da edição/texto de referência.
+Função no percurso: tradução inglesa histórica complementar. Pode ser usada para comparação de escolhas tradutórias e leitura histórica, mas não substitui a edição/texto de referência.
 
 URL: https://www.gutenberg.org/ebooks/1656
 
@@ -58,17 +94,13 @@ O projeto distingue explicitamente:
 - Sócrates representado por Platão;
 - posições filosóficas de Platão.
 
-Como Sócrates não deixou escritos, formulações sobre suas posições devem indicar a fonte quando a distinção for relevante. Expressões como “na *Apologia* de Platão, Sócrates afirma...” são preferíveis a atribuições históricas absolutas quando a evidência não permite certeza.
+Como Sócrates não deixou escritos, formulações sobre suas posições devem indicar a fonte quando a distinção for relevante.
 
-## Termos gregos e traduções
-
-Termos como *aretê* e *elenchus* não devem ser apresentados como se tivessem uma única equivalência portuguesa incontroversa. Quando necessário, o site apresenta o termo, uma tradução aproximada e o problema interpretativo.
-
-Em *Apologia* 38a, o projeto apresenta uma tradução de trabalho próxima da construção grega — “a vida não examinada não é vivível para um ser humano” — e também informa a formulação idiomática tradicional “a vida sem exame não vale a pena ser vivida”. Ambas devem ser identificadas como traduções/formulações, não como texto português original de Platão.
-
-## Traduções e paráfrases do projeto
+## Traduções e paráfrases
 
 Quando o Filosofia Aberta apresentar tradução própria, tradução de trabalho, paráfrase ou síntese pedagógica, isso deve ser identificado explicitamente. O texto do projeto não deve ser confundido com edição crítica, tradução publicada ou fala direta do autor antigo.
+
+Em *Apologia* 38a, o projeto registra como tradução de trabalho “a vida não examinada não é vivível para um ser humano” e também a formulação idiomática tradicional “a vida sem exame não vale a pena ser vivida”. Ambas são identificadas como traduções/formulações em português.
 
 ## Direitos
 
@@ -78,4 +110,4 @@ Licença CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 
 ## Regra editorial
 
-Fonte não é decoração. Cada referência deve responder a uma pergunta concreta do percurso. Para cada link externo, o projeto deve deixar claro: **origem → missão → destino → retorno**. Links externos abrem em nova aba para que o estudante consulte a fonte e retorne ao fio principal sem perder o ponto de partida.
+Fonte não é decoração. Cada referência deve responder a uma pergunta concreta do percurso. Para links de leitura, o projeto procura explicitar **origem → missão → destino → retorno**.
