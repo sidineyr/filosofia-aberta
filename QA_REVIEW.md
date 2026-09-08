@@ -1,101 +1,129 @@
-# Revisão de qualidade — pesquisador aprendiz e revisão editorial rigorosa
+# Revisão de qualidade — Filosofia Aberta
 
-Data: 2026-09-07
+Data da revisão atual: 2026-09-08
 
 ## Perspectiva de teste
 
-O projeto foi relido como se fosse material de uma escola organizada, por um estudante iniciante e por um revisor editorial rigoroso. As perguntas de controle foram:
+O projeto foi revisto simultaneamente como material de História da Filosofia, introdução à leitura de fontes primárias, experiência de aprendizagem para iniciantes e interface web acessível.
 
-- Por onde o aluno começa?
-- Cada link tem uma função clara?
-- O aluno sabe por que está abrindo uma fonte externa?
-- É possível voltar ao ponto exato da investigação sem perder o fio?
-- Está claro o que é fonte, tradução, interpretação e produção do projeto?
-- Está claro o que já existe e o que ainda é planejado?
-- Autoria, direitos, apoio de IA e caráter experimental estão explícitos?
-- O site está realmente publicado ou apenas commitado?
-- Indexação foi apenas preparada ou efetivamente confirmada?
+Perguntas de controle:
 
-## Problemas encontrados e correções
+- O estudante sabe por que está em cada etapa?
+- Cada link tem missão pedagógica e filosófica explícita?
+- Está claro o que é texto primário, contexto, tradução, interpretação e produção do projeto?
+- O Sócrates histórico é distinguido do Sócrates representado por Platão?
+- A passagem citada está em seu contexto dramático?
+- O percurso histórico evita sugerir evolução filosófica linear?
+- A interface oferece um próximo passo intelectualmente justificável?
 
-- **Links externos estavam soltos.** O módulo foi reorganizado como um fio: contexto → pergunta → conceitos → obra → passagem → análise → interpretações → caderno → ponte para o próximo problema.
-- **As fontes podiam parecer uma lista bibliográfica desconectada.** Agora cada fonte tem uma missão pedagógica declarada antes de ser aberta e uma ligação de retorno ao ponto de origem.
-- **Saídas externas podiam quebrar a continuidade.** As consultas externas usam nova aba (`target="_blank"` com `rel="noopener noreferrer"`) para preservar o percurso principal.
-- **O percurso parecia mais pronto do que estava.** A abertura identifica explicitamente o módulo de Sócrates como piloto e os módulos futuros como planejados.
-- **Risco de confundir Sócrates histórico e Sócrates de Platão.** A distinção foi reforçada antes da leitura da *Apologia*.
-- **A biblioteca não deixava evidente a função de cada recurso.** SEP, Perseus, Gutenberg e IEP passaram a ser classificados pelo papel que desempenham na investigação.
-- **Créditos e caráter experimental precisavam virar política editorial.** Foi criado `CREDITS_AND_SOURCES.md` e o README agora explicita autoria, CC BY 4.0, fontes de terceiros, apoio de IA e natureza experimental.
-- **SEO e descoberta precisavam ser separados de indexação real.** O repositório possui canonical, robots, sitemap e chave IndexNow; porém envio e indexação são estados distintos e não devem ser anunciados como equivalentes.
+## Auditoria prévia e decisões
 
-## Verificação de fontes
+| Local | Problema | Classificação | Correção realizada | Justificativa |
+|---|---|---|---|---|
+| Percurso editorial | “Sócrates leva a Platão...” sugeria sequência excessivamente linear | AMBÍGUO | Reescrito como rede de problemas, continuidades, rupturas e reformulações | Cronologia não deve ser confundida com progresso inevitável |
+| Conceitos | “Diálogo” ocupava uma das quatro lentes e faltava cuidado da alma | CORREÇÃO NECESSÁRIA | Incluído “cuidado da alma”, ancorado em *Apologia* 29d–30b | Tema diretamente relevante ao modo de vida defendido na obra |
+| 38a | Frase famosa aparecia sem explicitar suficientemente a situação dramática | FORA DE CONTEXTO | 38a agora é apresentado depois da condenação, durante a discussão da pena | Evita transformar uma passagem argumentativa em slogan |
+| Tradução de 38a | “não vale a pena ser vivida” podia parecer equivalência literal única | CORRETO, MAS SIMPLIFICADO | Acrescentada tradução de trabalho mais próxima da construção grega e mantida formulação idiomática tradicional | Mostra ao iniciante que tradução envolve escolhas |
+| Fonte de 38a | Gutenberg/Jowett aparecia como principal acesso ao texto | LINK INADEQUADO PARA A FUNÇÃO | Perseus 38a passou a ser fonte primária principal; Gutenberg virou tradução histórica complementar | Respeita a hierarquia texto primário → edição/tradução → comentário |
+| Ignorância socrática | Risco de slogan “sabia que nada sabia” | AMBÍGUO | Explicada via episódio do oráculo 21a–23b, sem usar o slogan como citação | Evita atribuição textual falsa ou simplificadora |
+| Interpretação | Questões críticas contemporâneas podiam parecer parte do texto antigo | INTERPRETAÇÃO APRESENTADA SEM CAMADA VISUAL SUFICIENTE | Criadas camadas visuais para texto, contexto, conceito, interpretação e resposta do estudante | O aluno deve reconhecer a natureza epistêmica do que lê |
+| CSS `.sr` | `clip:rect(...)` estava sintaticamente incompleto | CORREÇÃO NECESSÁRIA | Sintaxe corrigida | Remove erro objetivo e preserva padrão de acessibilidade |
+| Mapa | Decoração de seta absoluta podia se posicionar de forma imprevisível | CORREÇÃO TÉCNICA | Regra removida e os itens passaram a usar posicionamento estável | Evita defeito visual em diferentes larguras |
 
-Conferidas em 2026-09-07:
+## Fontes verificadas na revisão
 
-1. **Stanford Encyclopedia of Philosophy — “Socrates”**: sustenta a cautela sobre fontes indiretas e o chamado problema socrático.
-2. **Perseus Catalog — Plato, *Apology***: usado para identificação bibliográfica e tradição textual da obra.
-3. **Project Gutenberg — *Apology*, tradução de Benjamin Jowett**: usado para a tradução inglesa histórica relacionada à passagem 38a.
-4. **Internet Encyclopedia of Philosophy — “Socrates”**: usada como referência complementar para comparação.
+### Texto primário e edição
 
-Nenhuma dessas instituições é apresentada como parceira ou endossante do projeto.
+- **Perseus — Platão, *Apologia* 38a, tradução de Harold North Fowler**: confirma que a afirmação sobre a vida não examinada aparece junto da referência a conversar diariamente sobre *aretê* e examinar a si e aos outros.
+- **Perseus — texto grego de 38a, edição de John Burnet**: usado para conferir a construção `ὁ δὲ ἀνεξέταστος βίος οὐ βιωτὸς ἀνθρώπῳ` e evitar apresentar uma única tradução idiomática como literal.
+- **Perseus Catalog — Plato, *Apology***: confirma autoria, obra, edições gregas e tradução inglesa catalogada.
 
-## Créditos e direitos
+### Referências acadêmicas
 
-- Concepção e autoria: **Sidiney Rodrigues**.
-- Projeto: **experimental, gratuito e em desenvolvimento**.
-- Conteúdo autoral do projeto: **CC BY 4.0**, salvo indicação diferente.
-- Materiais externos mantêm seus próprios direitos, licenças e termos.
-- Desenvolvimento e revisão com apoio de IA da **OpenAI**, sem implicar parceria institucional, certificação acadêmica ou endosso.
+- **Stanford Encyclopedia of Philosophy — “Socrates”**: confirma que Sócrates nada escreveu, que as informações são indiretas e disputadas e que distinguir o Sócrates histórico das representações posteriores constitui o problema socrático.
+- **Internet Encyclopedia of Philosophy — “Socrates”**: usada para conferir as distinções entre ignorância socrática, prioridade do cuidado da alma, vida examinada, ironia e *elenchus*, inclusive registrando controvérsias interpretativas.
 
-## Publicação: estado real
+### Tradução histórica complementar
 
-O repositório informa `has_pages: true`, portanto GitHub Pages está habilitado. Entretanto, os últimos runs do workflow personalizado `Deploy GitHub Pages` falharam. Por isso, **não se deve afirmar que a revisão mais recente está publicada enquanto não houver um deploy bem-sucedido e uma checagem da URL pública**.
+- **Project Gutenberg — *Apology*, Benjamin Jowett**: permanece disponível para comparação histórica de tradução, mas não exerce mais a função de fonte principal da passagem 38a.
 
-Esse ponto é um bloqueador de publicação, não um detalhe cosmético.
+## Correções filosófico-pedagógicas realizadas
 
-## Indexação: estado real
+1. A pergunta central foi ancorada diretamente na *Apologia* em vez de formular uma tese geral sobre o Sócrates histórico.
+2. A distinção “Sócrates histórico ≠ personagem socrático ≠ filosofia de Platão” foi tornada explícita logo no início.
+3. O percurso histórico deixou de usar linguagem de sucessão necessária entre filósofos.
+4. *Aretê* passou a ser apresentada como termo cuja tradução depende do contexto.
+5. O cuidado da alma foi incluído e relacionado a 29d–30b.
+6. A ignorância socrática foi associada ao episódio do oráculo 21a–23b, evitando o falso estatuto de citação para “só sei que nada sei”.
+7. 38a foi contextualizado como parte da discussão posterior à condenação e ligado ao argumento sobre continuar a atividade filosófica.
+8. As duas leituras apresentadas no site foram marcadas explicitamente como interpretações pedagógicas, não como texto de Platão ou consenso acadêmico.
+9. O futuro módulo de Platão passou a ser anunciado como nova investigação, não como continuação evolutiva automática.
 
-Preparado no repositório:
+## UX educacional
 
-- `robots.txt` com permissão de rastreamento e referência ao sitemap;
-- `sitemap.xml` com URL canônica e `lastmod`;
-- metadados de indexação e canonical no HTML;
-- arquivo público de chave IndexNow;
-- workflow `indexnow.yml` programado para notificar mecanismos compatíveis **somente depois de um deploy bem-sucedido**.
+O módulo foi reorganizado para que cada etapa termine com uma indicação predominante de **PRÓXIMA PERGUNTA →**.
 
-Ainda precisa de comprovação operacional:
+As camadas agora são rotuladas visualmente como:
 
-- deploy público bem-sucedido;
-- leitura pública de `robots.txt`, `sitemap.xml` e chave IndexNow;
-- confirmação de submissão/recebimento no Bing Webmaster Tools / IndexNow;
-- propriedade e sitemap acompanhados no Google Search Console;
-- verificação posterior de rastreamento e indexação.
+- CONTEXTO HISTÓRICO;
+- QUESTÃO PARA O ESTUDANTE;
+- CONCEITOS;
+- TEXTO PRIMÁRIO;
+- INTERPRETAÇÃO;
+- RESPOSTA DO ESTUDANTE;
+- NOVA PERGUNTA.
 
-Enviar sitemap ou IndexNow não garante indexação.
+Os links externos seguem o padrão:
 
-## Limites desta revisão
+**origem → missão → destino → retorno**.
 
-Ainda não deve ser chamada de versão estável. Permanecem como etapas de aprovação:
+Todos os links externos presentes no módulo revisado usam `target="_blank"` e `rel="noopener noreferrer"`.
 
-- resolver o bloqueio de deploy do GitHub Pages;
-- validar a versão pública após o deploy;
-- testar navegação por teclado e leitor de tela em navegador real;
-- testar pelo menos desktop e smartphone;
-- executar auditorias Lighthouse/axe ou equivalentes;
-- confirmar todos os destinos externos na versão publicada;
-- corrigir qualquer erro de validação HTML/CSS encontrado na etapa final.
+## Teste pedagógico por conteúdo
+
+Após o percurso, o estudante deve conseguir responder:
+
+1. Quem foi Sócrates e por que sua reconstrução histórica é difícil?
+2. Por que a *Apologia* deve ser lida como obra de Platão e não ata judicial neutra?
+3. Qual é o contexto dramático de 38a?
+4. O que a passagem efetivamente menciona antes de afirmar que a vida não examinada não é vivível?
+5. Qual a diferença entre tradução, texto antigo, reconstrução acadêmica e interpretação pessoal?
+
+A nova arquitetura foi construída explicitamente para fornecer elementos para essas cinco respostas.
+
+## Verificação técnica realizada nesta revisão
+
+- CSS `.sr` corrigido.
+- Regra visual problemática do mapa corrigida.
+- Links externos principais conferidos contra os destinos oficiais/ acadêmicos.
+- Links internos foram reestruturados para apontar somente para IDs existentes no novo documento.
+- Navegação móvel mantém os breakpoints já existentes e as novas camadas usam componentes responsivos existentes.
+- Controles de foco, tamanho de fonte, espaçamento, impressão e armazenamento local foram preservados.
+
+## Limites da verificação
+
+Esta revisão não substitui teste com leitor de tela real, Lighthouse, axe, smartphone físico ou múltiplos navegadores. Esses testes continuam recomendados antes de chamar a versão de estável.
+
+## Publicação e indexação
+
+GitHub Pages já vinha sendo publicado pela branch `gh-pages`. Após esta revisão, a nova versão deve ser enviada para essa branch e o run nativo de Pages precisa concluir com sucesso antes de considerar as correções publicadas.
+
+SEO, sitemap, robots e IndexNow continuam sendo mecanismos de descoberta; nenhum deles garante indexação.
 
 ## Regra para novos módulos
 
 Nenhum módulo deve ser marcado como disponível antes de conter:
 
-1. pergunta filosófica explícita;
+1. pergunta filosófica explícita e vinculada a uma obra/passagem;
 2. contexto mínimo verificável;
-3. obra e passagem localizáveis;
+3. obra, edição e passagem localizáveis;
 4. distinção entre fonte, tradução, paráfrase e interpretação;
-5. links externos com finalidade pedagógica declarada;
-6. caminho de retorno ao fio principal;
-7. perguntas de leitura e pelo menos uma objeção;
-8. referências verificadas;
-9. créditos e direitos quando aplicável;
-10. revisão de acessibilidade e navegação;
-11. deploy bem-sucedido e teste da versão pública.
+5. termos técnicos apresentados com cautela tradutória;
+6. links externos com missão pedagógica declarada;
+7. caminho de retorno ao fio principal;
+8. pelo menos uma questão de leitura e uma objeção;
+9. relações históricas descritas sem teleologia simplificadora;
+10. referências verificadas;
+11. créditos e direitos quando aplicável;
+12. revisão de acessibilidade e navegação;
+13. deploy bem-sucedido e teste da versão pública.
