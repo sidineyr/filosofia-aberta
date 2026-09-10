@@ -1,5 +1,39 @@
 # Filosofia Aberta — notas de versão
 
+## v0.3.0 — O percurso está aberto
+
+Data: 2026-09-10
+
+Esta versão transforma o protótipo em um site completo e navegável. O percurso agora oferece 14 etapas da Filosofia Antiga a debates contemporâneos, além de três rotas paralelas de diálogo com tradições e problemas que não cabem numa única linha cronológica.
+
+### Conteúdo
+
+- 17 leituras guiadas completas;
+- 26 passagens identificadas por obra e localização;
+- 42 sugestões de fonte primária e apoio acadêmico abertas ou gratuitas;
+- originais, traduções de trabalho, interpretações e direitos apresentados separadamente;
+- páginas dedicadas a biblioteca, fontes, método e limites do projeto;
+- rotas sobre Confúcio, o *Dhammapada*, Sor Juana e Nísia Floresta.
+
+### Base acadêmica ampliada
+
+O desenho curricular deixa de usar apenas universidades federais. A matriz pública passa a reunir documentos da UFSC, UFSCar, UFPel, UFBA, USP, PUC-SP, FAJE, Mackenzie, MIT OpenCourseWare, Open Yale Courses e ANPOF. A amostra é deliberadamente diversa e não é apresentada como exaustiva ou como endosso dessas instituições.
+
+### Produto e tecnologia
+
+- gerador estático sem dependências de produção;
+- conteúdo estruturado separado da apresentação;
+- pesquisa local na biblioteca;
+- progresso, anotações e preferências salvos somente no navegador;
+- controles de leitura, navegação por teclado e layout responsivo;
+- página 404, sitemap e metadados por leitura;
+- bateria com mais de mil verificações e controle contínuo no GitHub Actions;
+- publicação pelo fluxo nativo do GitHub Pages.
+
+### Compromisso editorial
+
+O projeto distingue licença aberta, domínio público e acesso gratuito. Não reproduz longos trechos protegidos, não chama acesso grátis de licença aberta e declara as lacunas que ainda exigem pesquisa responsável.
+
 ## v0.2.0 — Bloquinhos de conhecimento
 
 Data: 2026-09-08

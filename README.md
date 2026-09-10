@@ -1,92 +1,78 @@
 # Filosofia Aberta
 
-**Comece aqui. Leia isto. Pense sobre esta pergunta. Agora veja o que aconteceu depois.**
+**Leia uma passagem. Siga a pergunta.**
 
-Projeto educacional **experimental, gratuito e em desenvolvimento** para leitura orientada dos clássicos da Filosofia, concebido por **Sidiney Rodrigues**.
+Projeto educacional experimental, gratuito e aberto para leitura orientada de Filosofia, concebido por **Sidiney Rodrigues**.
 
-Site: https://sidineyr.github.io/filosofia-aberta/
+Site público: https://sidineyr.github.io/filosofia-aberta/
 
-## Nova arquitetura
+## O que está disponível
 
-O Filosofia Aberta deixou de ser organizado como catálogo de filósofos. A experiência principal agora é um **percurso cronológico, contínuo e orientado de leituras**.
+- 14 etapas cronológicas completas, da Filosofia Antiga a debates contemporâneos;
+- 3 rotas paralelas: Leste Asiático, Sul da Ásia e América Latina/Brasil;
+- 26 passagens identificadas por obra e localização;
+- 42 sugestões curtas de fontes primárias e introduções acadêmicas abertas ou de acesso gratuito;
+- progresso, preferências de leitura e caderno salvos apenas no navegador;
+- páginas individuais navegáveis, biblioteca pesquisável, fontes e método;
+- interface responsiva, navegação por teclado, foco visível, tamanho e espaçamento ajustáveis e suporte a movimento reduzido.
 
-Fluxo pedagógico:
+O fluxo pedagógico de cada leitura é:
 
 **ler → compreender → refletir → continuar**
 
-A cronologia funciona como orientação histórica, não como tese de progresso inevitável. Relações entre autores devem indicar continuidade, ruptura, crítica ou reformulação.
-
 ## Base acadêmica
 
-A estrutura é construída por comparação de documentos institucionais públicos de universidades brasileiras, especialmente PPCs, matrizes, ementas e planos de ensino.
+O desenho deixou de tomar universidades federais como único ponto de referência. A matriz compara fontes públicas de:
 
-A matriz inicial inclui fontes da **UFSC, UFSCar, UFPel e UFBA**. Consulte [`RESEARCH_MATRIX.md`](RESEARCH_MATRIX.md) para metodologia, fontes e limites.
+- universidades federais: UFSC, UFSCar, UFPel e UFBA;
+- universidade estadual: USP;
+- universidades e faculdades privadas comunitárias/confessionais: PUC-SP, FAJE e Mackenzie;
+- cursos abertos internacionais: MIT OpenCourseWare e Open Yale Courses;
+- associação acadêmica: ANPOF;
+- bibliotecas e redes abertas: Perseus, Project Gutenberg, Wikisource, Internet Archive, Biblioteca Digital do Senado, SEP, IEP e SciELO.
 
-Não existe no projeto a alegação de um único “currículo federal de Filosofia”. Recorrência aumenta relevância editorial, mas divergências permanecem visíveis.
+Isso não constitui um currículo único nem uma lista exaustiva de instituições. Consulte [`RESEARCH_MATRIX.md`](RESEARCH_MATRIX.md) e a página pública [Fontes e método](https://sidineyr.github.io/filosofia-aberta/fontes.html).
 
-## Estado atual
+## Arquitetura
 
-O site já apresenta o macropercurso:
+O projeto é um site estático, sem rastreamento e sem dependências de produção.
 
-**Antiguidade → Idade Média → Modernidade → Filosofia Contemporânea**
+```text
+content/site-data.mjs   conteúdo estruturado e fontes
+scripts/build-site.mjs gerador das páginas estáticas
+scripts/check-site.mjs verificações editoriais e técnicas
+assets/styles.css      sistema visual responsivo
+assets/app.js          preferências, progresso, notas e filtro
+leituras/              páginas HTML geradas
+```
 
-O percurso antigo de trabalho segue:
+## Desenvolvimento
 
-**Pré-socráticos → Sofistas → Sócrates → Platão → Aristóteles → Helenismo → Neoplatonismo**
+Requisito: Node.js 20 ou posterior.
 
-O módulo integralmente revisado e disponível continua sendo **Sócrates via a _Apologia_ de Platão**. Os demais pontos aparecem como planejados até passarem por revisão equivalente.
+```bash
+npm test
+```
 
-## Experiência de leitura
+O comando regenera o site, verifica a sintaxe JavaScript e executa mais de mil asserções sobre estrutura editorial, metadados, acessibilidade básica, páginas, âncoras e links internos. O workflow `Quality checks` repete a verificação no GitHub Actions e confirma que os arquivos gerados estão versionados.
 
-Cada módulo disponível deve responder:
+## Regra editorial
 
-- Onde estou?
-- Qual é a pergunta filosófica?
-- O que vou ler?
-- Por que estou lendo isso?
-- O que preciso saber antes?
-- O que o texto realmente diz?
-- O que já é tradução ou interpretação?
-- O que devo pensar depois da leitura?
-- O que vem em seguida?
+Uma leitura só é publicada quando contém:
 
-O site mantém progresso e anotações localmente, sem exigir conta.
-
-## Fontes do módulo disponível
-
-- **Perseus — Platão, _Apologia_ 38a**: fonte primária de referência.
-- **Perseus Catalog — Plato, _Apology_**: identificação bibliográfica e tradição editorial.
-- **Stanford Encyclopedia of Philosophy — “Socrates”**: contexto histórico e problema socrático.
-- **Internet Encyclopedia of Philosophy — “Socrates”**: referência acadêmica complementar.
-- **Project Gutenberg — _Apology_, Benjamin Jowett**: tradução inglesa histórica complementar.
-
-Consulte [`CREDITS_AND_SOURCES.md`](CREDITS_AND_SOURCES.md) para direitos, traduções e função pedagógica das fontes.
-
-## Qualidade
-
-Nenhum módulo deve ser marcado como disponível sem:
-
-1. pergunta filosófica explícita;
-2. obra/passagem localizável;
-3. contexto verificável;
-4. distinção entre fonte, tradução, paráfrase e interpretação;
-5. referências verificadas;
-6. questões de leitura;
-7. transição para o próximo problema;
-8. revisão de acessibilidade;
-9. teste de links e navegação;
-10. publicação verificada.
-
-Consulte [`QA_REVIEW.md`](QA_REVIEW.md).
-
-## Descoberta e indexação
-
-O repositório mantém `robots.txt`, `sitemap.xml`, URL canônica, metadados de indexação e infraestrutura existente de descoberta. Esses mecanismos ajudam rastreamento, mas não garantem indexação por buscadores.
+1. posição, contexto e pergunta filosófica;
+2. obra e passagem localizáveis;
+3. edição/base, nota de tradução, fonte, direitos e data de consulta;
+4. explicação, conceitos e alerta contra um equívoco provável;
+5. duas perguntas de reflexão;
+6. duas ou três leituras legalmente acessíveis, incluindo fonte primária e apoio acadêmico;
+7. relação explícita com a leitura seguinte;
+8. revisão de navegação e acessibilidade.
 
 ## Direitos e créditos
 
 Concepção e autoria: **Sidiney Rodrigues**.
 
-Conteúdo autoral produzido para o projeto: **CC BY 4.0**, salvo indicação diferente. Materiais de terceiros preservam suas próprias licenças e condições.
+Conteúdo autoral do projeto: **CC BY 4.0**, salvo indicação diferente. Textos e plataformas de terceiros preservam suas próprias licenças, direitos e condições. Traduções produzidas para orientação são marcadas como “tradução de trabalho” e não substituem edições publicadas.
 
-Desenvolvimento e revisão com apoio de inteligência artificial da **OpenAI**. Isso não implica parceria institucional, certificação acadêmica ou endosso das instituições citadas.
+Desenvolvimento e revisão técnica/editorial com apoio de inteligência artificial da **OpenAI**. Isso não implica parceria, certificação ou endosso das instituições citadas.

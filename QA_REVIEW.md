@@ -1,123 +1,93 @@
 # Revisão de qualidade — Filosofia Aberta
 
-Data da revisão: 2026-09-08
+Data da revisão: 2026-09-10
 
-## Escopo desta reconstrução
+Versão: 0.3.0
 
-O site foi redefinido a partir do documento-mestre “Filosofia Aberta — Redefinição Completa”. A arquitetura principal deixou de ser uma coleção de filósofos e passou a ser um **percurso cronológico de leituras**.
+## Escopo
 
-Critério central de UX:
+O site oferece um percurso público de leitura filosófica com **14 etapas cronológicas**, **3 rotas em diálogo**, **26 passagens localizáveis** e **42 sugestões de leitura abertas ou de acesso gratuito**.
+
+Critério central de experiência:
 
 **ler → compreender → refletir → continuar**
 
-## Pesquisa curricular realizada
+## Revisão editorial
 
-Foram verificadas fontes institucionais públicas da UFSC, UFSCar, UFPel e UFBA. A pesquisa sustenta:
+Cada página publicada foi conferida quanto a:
 
-- divisão macro em Antiga, Medieval, Moderna e Contemporânea;
-- uso da História da Filosofia como eixo estrutural da formação;
-- sequência antiga de trabalho que inclui pré-socráticos, sofistas, Sócrates, Platão, Aristóteles, helenismo e neoplatonismo;
-- convivência entre História da Filosofia e problemas sistemáticos como lógica, ética, política, conhecimento e estética.
+1. posição no percurso, contexto e pergunta filosófica;
+2. identificação de autora ou autor, obra e passagem;
+3. separação entre original, tradução de trabalho e interpretação;
+4. fonte, edição ou base digital, direitos e data de consulta;
+5. explicação, conceitos e alerta contra um equívoco provável;
+6. perguntas de reflexão e transição para a próxima leitura;
+7. duas ou três sugestões com missão de leitura;
+8. distinção entre licença aberta, domínio público e simples acesso gratuito.
 
-A metodologia e os links institucionais estão documentados em `RESEARCH_MATRIX.md`.
+As passagens em línguas diferentes do português preservam o original e identificam a tradução como produção de trabalho do projeto. Citações breves de obras ainda protegidas não são apresentadas como conteúdo aberto.
 
-## Decisões de arquitetura
+## Pesquisa curricular
 
-| Problema anterior | Alteração | Motivo |
-|---|---|---|
-| Home centrada no módulo piloto | Home agora começa pelo percurso e pelo botão “Continuar minha leitura” | Reduz decisão inicial e dá orientação imediata |
-| Filósofos apresentados como destinos isolados | Períodos expansíveis e sequência cronológica | Faz o estudante saber onde está e o que vem depois |
-| Timeline misturava planejado e disponível | Estados “disponível” e “planejado” ficam explícitos | Evita simular conteúdo ainda não revisado |
-| Navegação interna orientada por conceitos do piloto | Navegação principal passa a ser Percurso → Leitura atual → Método → Fontes | Alinha interface à nova unidade pedagógica |
-| Progresso sem relação clara com percurso | Progresso local é associado à leitura integral disponível | Não cria falsa porcentagem sobre módulos ainda inexistentes |
-| Pesquisa curricular pouco visível | Criada seção “Como construímos este percurso?” e matriz auditável | Transparência metodológica |
+A matriz não se limita às universidades federais. Foram verificadas fontes públicas de universidades federais, estadual e comunitária/confessional, cursos abertos internacionais e associação acadêmica:
 
-## Módulo disponível
+- UFSC, UFSCar, UFPel e UFBA;
+- USP, PUC-SP, FAJE e Mackenzie;
+- MIT OpenCourseWare e Open Yale Courses;
+- ANPOF.
 
-O módulo Sócrates / Platão foi preservado, mas reposicionado dentro do percurso antigo.
+A seleção é representativa, não exaustiva, e não implica endosso institucional. Metodologia, links e limites estão em `RESEARCH_MATRIX.md` e na página `fontes.html`.
 
-Mantidas as distinções:
+## Arquitetura e navegação
 
-- Sócrates histórico;
-- Sócrates representado por Platão;
-- texto primário;
-- tradução;
-- interpretação pedagógica.
-
-A leitura continua centrada na *Apologia* 38a, com retorno recomendado a 21a–23b e 29d–30b.
+| Elemento | Verificação |
+|---|---|
+| Página inicial | Apresenta escopo real, períodos, rotas e retomada de leitura. |
+| Leituras | 17 páginas individuais com sumário, texto, reflexão, notas e paginação. |
+| Biblioteca | Filtro local por autor, tema, pergunta ou período. |
+| Fontes | Critérios editoriais, matriz institucional, direitos e limites. |
+| Continuidade | Toda leitura possui destino anterior ou seguinte coerente. |
+| Persistência | Progresso, notas e preferências ficam apenas no navegador. |
+| URLs | Links internos, âncoras, canonical, sitemap e página 404 verificados. |
 
 ## Acessibilidade e responsividade
 
-A reconstrução mantém ou introduz:
+O código inclui:
 
-- link “Pular para o conteúdo”;
-- HTML semântico;
-- foco visível;
-- navegação por teclado;
-- contraste textual alto;
-- layout responsivo;
+- idioma `pt-BR`, HTML semântico e ordem coerente de títulos;
+- link “Pular para o conteúdo” e navegação por teclado;
+- foco visível e estados que não dependem apenas de cor;
+- contraste textual alto e áreas de interação identificadas;
+- controles de tamanho, espaçamento e modo de foco;
+- rótulos e estados ARIA nos controles interativos;
 - preferência `prefers-reduced-motion`;
-- controles de tamanho de fonte;
-- controle de espaçamento;
-- modo de foco;
-- áreas clicáveis com texto descritivo;
-- navegação sem dependência exclusiva de cor.
+- pontos de quebra para desktop, tablet e celular;
+- funcionamento do conteúdo essencial sem JavaScript.
 
-## Persistência local
+## Verificação automatizada
 
-O navegador pode armazenar:
+O comando único é:
 
-- anotações do módulo Sócrates;
-- estado de conclusão da leitura;
-- tamanho de fonte.
+```bash
+npm test
+```
 
-Nenhum cadastro é exigido.
+Ele executa:
 
-## Verificação estrutural
+1. geração determinística de todas as páginas;
+2. verificação de sintaxe do JavaScript do navegador;
+3. mais de mil asserções sobre estrutura, metadados, passagens, leituras, acessibilidade básica, arquivos, links e âncoras internas.
 
-Foi conferido no código:
+O workflow `.github/workflows/quality.yml` repete a bateria no GitHub Actions e falha se os arquivos gerados não corresponderem ao conteúdo-fonte.
 
-- `lang="pt-BR"`;
-- `meta viewport`;
-- descrição, autor, robots e canonical;
-- navegação principal para IDs existentes;
-- links internos da leitura para seções existentes;
-- links externos com `target="_blank"` e `rel="noopener noreferrer"`;
-- marcação explícita de módulos planejados;
-- armazenamento local sem envio de dados;
-- breakpoints para tablet e celular.
+## Limites declarados
 
-## Limites
+- A organização em quatro períodos é um mapa didático frequente, não uma história universal completa.
+- As instituições consultadas formam uma amostra diversificada e ampliável, não “todas as universidades”.
+- Tradições africanas, indígenas, islâmicas, chinesas, indianas e latino-americanas exigem expansão com contexto próprio; as três rotas atuais não encerram esse trabalho.
+- A inclusão de materiais indígenas dependerá de autoria, proveniência, tradução, autorização e licença seguras.
+- A revisão automatizada não substitui pesquisa com estudantes, auditoria por leitor de tela real ou teste em todo dispositivo físico existente.
 
-Esta revisão de código não substitui teste com:
+## Regra para novas leituras
 
-- leitor de tela real;
-- Lighthouse;
-- axe;
-- smartphone físico;
-- múltiplos navegadores;
-- estudo de usabilidade com estudantes reais.
-
-Esses testes continuam necessários antes de declarar uma versão estável.
-
-## Regra para novos módulos
-
-Nenhum módulo deve ser marcado como disponível antes de conter:
-
-1. pergunta filosófica explícita e vinculada a obra/passagem;
-2. contexto mínimo verificável;
-3. obra, edição e passagem localizáveis;
-4. distinção entre fonte, tradução, paráfrase e interpretação;
-5. referência curricular verificável quando aplicável;
-6. termos técnicos apresentados com cautela tradutória;
-7. links externos com função pedagógica clara;
-8. pelo menos uma questão de leitura e uma objeção ou problema;
-9. transição para a próxima leitura sem teleologia simplificadora;
-10. referências verificadas;
-11. créditos e direitos;
-12. revisão de acessibilidade e navegação;
-13. teste da versão publicada.
-
-## Estado de publicação
-
-A reconstrução foi concluída em `main`. A branch de publicação deve ser sincronizada com o commit final e a versão pública deve ser conferida antes de registrar o deploy como verificado.
+Nenhuma leitura deve ser publicada antes de cumprir os oito critérios editoriais acima, passar pela bateria automatizada e ser verificada na versão pública.

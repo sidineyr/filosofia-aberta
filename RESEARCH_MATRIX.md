@@ -1,93 +1,83 @@
 # Matriz de pesquisa curricular — Filosofia Aberta
 
-Data: 2026-09-08
+Data da revisão: 2026-09-10
 
-Este documento registra a base acadêmica usada para reconstruir o percurso cronológico do Filosofia Aberta. Ele não afirma a existência de um “currículo federal de Filosofia”. O objetivo é comparar documentos institucionais públicos e tornar as escolhas editoriais auditáveis.
+Este documento registra as fontes usadas para desenhar o percurso. A matriz é representativa, auditável e ampliável; não afirma existir um currículo único de Filosofia nem pretende enumerar literalmente toda instituição dedicada ao tema.
 
-## Critério de seleção
+## Critérios
 
-Cada autor, obra ou problema pode ganhar prioridade quando reúne um ou mais critérios:
+Uma obra, autora, autor ou problema ganha prioridade quando combina:
 
-1. recorrência em ementas, matrizes ou PPCs de universidades públicas;
-2. função estrutural em História da Filosofia;
-3. relevância para a leitura progressiva de fontes primárias;
-4. disponibilidade de edição, catálogo ou texto legalmente acessível;
-5. valor pedagógico para iniciantes.
+1. função estrutural em História da Filosofia ou em um problema sistemático;
+2. recorrência em documentos institucionais públicos;
+3. capacidade de formar uma sequência de leitura para iniciantes;
+4. existência de passagem localizável e fonte legalmente acessível;
+5. possibilidade de explicitar divergências, traduções e limites;
+6. ampliação responsável de tradições e vozes, sem inclusão ornamental.
 
-Recorrência aumenta a relevância; não cria unanimidade. Divergências entre programas devem permanecer visíveis.
+Recorrência aumenta relevância editorial; não cria unanimidade.
 
 ## Fontes institucionais verificadas
 
-### Universidade Federal de Santa Catarina — UFSC
+| Natureza | Instituição | Fonte | Função no percurso |
+|---|---|---|---|
+| Federal | UFSC | https://filosofia.ufsc.br/sobre-o-curso/ | Divisão histórica Antiga, Medieval, Moderna e Contemporânea. |
+| Federal | UFSCar | https://www.prograd.ufscar.br/pt-br/cursos/cursos-oferecidos/filosofia | Formação em História da Filosofia, PPCs e matrizes. |
+| Federal | UFPel | https://institucional.ufpel.edu.br/disciplinas/cod/0730135 | Sequência antiga dos pré-socráticos ao neoplatonismo. |
+| Federal | UFBA | https://dpsofia.ufba.br/ementas/disciplinas-gerais | Articulação entre História da Filosofia, lógica, ética e estética. |
+| Estadual | USP | https://filosofia.fflch.usp.br/graduacao | Estudo aprofundado de temas e autores, evitando panorama superficial. |
+| Comunitária/confessional | PUC-SP | https://www.pucsp.br/graduacao/filosofia | Pluralidade de tradições; filosofia brasileira, latino-americana, africana, gênero e tecnologia. |
+| Faculdade privada comunitária/confessional | FAJE | https://faculdadejesuita.edu.br/filosofia/ | Currículo, graduação, mestrado e pesquisa numa instituição especializada. |
+| Universidade privada confessional | Mackenzie — CEFT | https://www.mackenzie.br/universidade/unidades-academicas/ceft | Ensino, pesquisa e extensão em Educação, Filosofia e Teologia. |
+| Curso aberto internacional | MIT OpenCourseWare | https://ocw.mit.edu/courses/24-01-classics-of-western-philosophy-spring-2016/pages/syllabus/ | Leitura próxima, exegese e análise de textos clássicos. |
+| Curso aberto internacional | Open Yale Courses | https://oyc.yale.edu/political-science/plsc-114 | Sequência guiada de obras de filosofia política com aulas abertas. |
+| Associação acadêmica | ANPOF | https://anpof.org.br/ | Programas, grupos de trabalho, publicações e debates no Brasil. |
 
-Fonte: https://filosofia.ufsc.br/sobre-o-curso/
+Consulta das páginas: **10 de setembro de 2026**.
 
-Achado: o curso descreve quatro disciplinas históricas — História da Filosofia Antiga, Medieval, Moderna e Contemporânea — e apresenta o conhecimento histórico como essencial à formação filosófica.
+Nenhuma instituição listada participa, certifica ou endossa o projeto.
 
-Fonte complementar: https://filosofia.ufsc.br/planos-2026-1/
+## Síntese editorial
 
-Achado: a oferta de 2026.1 inclui História da Filosofia I e História da Filosofia III, confirmando a continuidade da organização curricular histórica.
+### Percurso principal
 
-Uso no Filosofia Aberta: fundamenta a divisão macrocronológica do percurso.
+1. Heráclito e a mudança;
+2. Protágoras e a medida;
+3. Sócrates e a vida examinada;
+4. Platão e a caverna;
+5. Aristóteles e a vida boa;
+6. Epicuro, Epicteto e o cuidado;
+7. Agostinho e o tempo;
+8. Tomás de Aquino e a causalidade;
+9. Descartes e a dúvida;
+10. Hobbes, Locke e Hume;
+11. Rousseau, Kant e autonomia;
+12. Hegel, Marx e Nietzsche;
+13. Husserl, Beauvoir e a existência situada;
+14. Wittgenstein, Du Bois, linguagem e política.
 
-### Universidade Federal de São Carlos — UFSCar
+### Rotas em diálogo
 
-Fonte: https://www.prograd.ufscar.br/pt-br/cursos/cursos-oferecidos/filosofia
+- Confúcio: aprendizagem e prática;
+- Dhammapada: mente, ação e sofrimento;
+- Sor Juana e Nísia Floresta: gênero, saber e educação.
 
-Achado: bacharelado e licenciatura destacam sólida formação em História da Filosofia. A página institucional disponibiliza PPCs e matrizes curriculares.
+As rotas não são anexos “fora da Filosofia” nem tentativas de encaixar tradições distintas numa mesma linha de progresso. Elas funcionam como entradas paralelas com contexto e limites comparativos explícitos.
 
-Fonte complementar: PPC do Bacharelado em Filosofia (2017), disponível na própria ProGrad/UFSCar.
+## Hierarquia de fontes
 
-Achado: o PPC organiza disciplinas de História da Filosofia Antiga 1 e 2, Medieval 1, Moderna 1 e 2 e Contemporânea 1 e 2; também prevê componentes optativos de aprofundamento histórico.
+1. texto primário ou digitalização da edição;
+2. edição, catálogo ou biblioteca acadêmica;
+3. enciclopédia ou artigo acadêmico com autoria identificada;
+4. documento curricular institucional;
+5. síntese pedagógica do projeto, sempre marcada como tal.
 
-Uso no Filosofia Aberta: reforça a divisão por períodos e a ideia de camadas de aprofundamento.
+Para textos em domínio público nos Estados Unidos, a página não presume automaticamente o mesmo status em todas as jurisdições. Acesso gratuito também não é chamado de licença aberta quando a fonte não o declara.
 
-### Universidade Federal de Pelotas — UFPel
+## Limites e expansão responsável
 
-Fonte: https://institucional.ufpel.edu.br/disciplinas/cod/0730135
-
-Disciplina: História da Filosofia Antiga.
-
-Achado: a ementa e o conteúdo programático percorrem origens da filosofia, pré-socráticos, sofistas, Sócrates e escolas socráticas, Platão, Aristóteles, filosofias helenísticas, Plotino e neoplatonismo.
-
-Uso no Filosofia Aberta: fundamenta a primeira sequência interna de trabalho para a Antiguidade.
-
-### Universidade Federal da Bahia — UFBA
-
-Fonte: https://dpsofia.ufba.br/ementas/disciplinas-gerais
-
-Achado: a estrutura curricular pública inclui História da Filosofia Antiga I já no primeiro semestre, além de componentes sistemáticos como Introdução à Filosofia, Lógica, Ética e Estética.
-
-Uso no Filosofia Aberta: reforça a importância de uma porta de entrada histórica acompanhada por problemas sistemáticos transversais.
-
-## Síntese editorial atual
-
-### Macropercurso
-
-Antiguidade → Idade Média → Modernidade → Filosofia Contemporânea
-
-Essa estrutura é usada como orientação, não como tese de progresso inevitável.
-
-### Percurso antigo em construção
-
-Pré-socráticos → Sofistas → Sócrates → Platão → Aristóteles → Helenismo → Neoplatonismo
-
-A ordem resulta principalmente da convergência entre a organização histórica institucional e a ementa antiga da UFPel. O módulo de Sócrates permanece o primeiro módulo integralmente revisado disponível no site; os itens anteriores e posteriores são explicitamente marcados como planejados até que recebam o mesmo nível de revisão.
-
-## Regra para leituras
-
-Uma leitura só pode ser marcada como disponível após possuir:
-
-- pergunta filosófica explícita;
-- obra/passagem localizável;
-- contexto histórico mínimo;
-- distinção entre fonte, tradução, síntese e interpretação;
-- referência curricular verificável quando aplicável;
-- fonte primária ou edição legalmente acessível;
-- questões pós-leitura;
-- transição para a próxima pergunta;
-- revisão de acessibilidade, links e navegação.
-
-## Limites desta matriz
-
-Esta é uma matriz inicial, não exaustiva. Novas universidades federais, universidades estaduais, programas internacionais e bibliografias específicas poderão ser incorporados em versões futuras, desde que as fontes sejam institucionais ou academicamente verificáveis e sua função editorial seja registrada.
+- Os quatro períodos do eixo principal refletem uma organização curricular frequente, não uma história universal completa.
+- Tradições africanas, indígenas, islâmicas, chinesas, indianas e latino-americanas não devem ser reduzidas a um cartão genérico.
+- A presença indígena requer especial atenção a autoria, origem comunitária, tradução, oralidade, autorização e contexto. O projeto prefere declarar a lacuna a reproduzir material sem proveniência ou licença segura.
+- Obras contemporâneas protegidas recebem apenas citações breves para estudo e crítica, com referência bibliográfica; não são apresentadas como conteúdo aberto.
+- A matriz deve crescer por revisão de fontes, não por promessa artificial de exaustividade.

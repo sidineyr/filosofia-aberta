@@ -1,50 +1,311 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Filosofia Aberta: percurso cronológico, gratuito e orientado de leitura dos clássicos da Filosofia, construído com referência a currículos de universidades públicas brasileiras.">
-<meta name="author" content="Sidiney Rodrigues">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="https://sidineyr.github.io/filosofia-aberta/">
-<meta property="og:title" content="Filosofia Aberta — comece aqui e siga a história das perguntas">
-<meta property="og:description" content="Leia, compreenda, reflita e continue. Um percurso cronológico pelos textos clássicos da Filosofia.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sidineyr.github.io/filosofia-aberta/">
-<title>Filosofia Aberta — percurso cronológico de leituras</title>
-<style>
-:root{--bg:#f5f1e8;--paper:#fffdf8;--ink:#20241f;--muted:#667066;--green:#17483b;--rust:#a34f32;--line:#d8d0c3;--soft:#e8efe9;--gold:#d7b95c;--fs:18px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font:var(--fs)/1.68 Georgia,serif}a{color:var(--green);text-underline-offset:3px}button,a,textarea{font:inherit}:focus-visible{outline:3px solid var(--rust);outline-offset:3px}.skip{position:absolute;left:-9999px}.skip:focus{left:1rem;top:1rem;z-index:50;background:#fff;padding:.7rem}.top{position:sticky;top:0;z-index:20;background:#f5f1e8f4;border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}header{max-width:1160px;margin:auto;display:flex;align-items:center;gap:1rem;padding:.75rem 3vw}.brand{text-decoration:none;color:var(--ink);font-weight:700;white-space:nowrap}.brand b{border:1px solid;border-radius:50%;padding:.2rem .45rem;margin-right:.4rem}nav{margin-left:auto;display:flex;gap:1rem;overflow-x:auto;font:13px Arial,sans-serif}nav a{text-decoration:none;white-space:nowrap}.tools{display:flex;gap:.3rem}.tools button{background:transparent;border:1px solid var(--line);border-radius:999px;padding:.3rem .55rem;cursor:pointer;font:12px Arial,sans-serif}.hero,.section,footer{max-width:1120px;margin:auto;padding:4.5rem 4vw}.hero{min-height:72vh;display:grid;grid-template-columns:1.3fr .7fr;gap:3rem;align-items:center}.eyebrow,.tag,.status{font:700 11px Arial,sans-serif;text-transform:uppercase;letter-spacing:.11em;color:var(--rust)}h1{font-size:clamp(3.1rem,7vw,6.2rem);line-height:.94;letter-spacing:-.055em;margin:.35rem 0 1.3rem}h2{font-size:clamp(2.1rem,5vw,3.7rem);line-height:1.05;letter-spacing:-.035em}h3{line-height:1.2}.lead{font-size:1.22rem;max-width:720px;color:#3f473f}.btn{display:inline-block;border:1px solid var(--green);border-radius:999px;padding:.68rem 1rem;text-decoration:none;margin:.3rem .3rem .3rem 0}.primary{background:var(--green);color:#fff}.hero-card,.notice,.sourcebox,.reading-card,.period,.method-card{border-radius:16px}.hero-card{background:var(--green);color:#fff;padding:1.4rem}.hero-card .eyebrow{color:#f0be9d}.progress{height:8px;background:#d6ddd7;border-radius:999px;overflow:hidden;margin:1rem 0}.progress span{display:block;height:100%;width:0;background:var(--gold)}.section{border-bottom:1px solid var(--line)}.intro{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:end;margin-bottom:2.4rem}.muted,.meta{color:var(--muted)}.meta{font:13px/1.5 Arial,sans-serif}.path{display:grid;gap:.8rem}.period{background:var(--paper);border:1px solid var(--line);padding:1.1rem}.period[open]{border-color:#aebbad}.period summary{cursor:pointer;list-style:none;display:grid;grid-template-columns:120px 1fr auto;gap:1rem;align-items:center}.period summary::-webkit-details-marker{display:none}.period time{font:12px Arial,sans-serif;color:var(--muted)}.period h3{margin:.1rem 0}.period-body{padding:1rem 0 0 120px}.stops{display:grid;gap:.55rem}.stop{display:grid;grid-template-columns:34px 1fr auto;gap:.8rem;align-items:start;padding:.7rem 0;border-top:1px solid #ece5da}.dot{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);font:700 12px Arial,sans-serif;background:#fff}.ready .dot{background:var(--green);color:#fff}.planned{opacity:.78}.status{border:1px solid var(--line);border-radius:999px;padding:.23rem .5rem;color:var(--muted)}.ready .status{background:var(--soft);color:var(--green)}.reading-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:2rem}.side{position:sticky;top:92px;align-self:start;font:13px Arial,sans-serif}.side a{display:block;padding:.45rem 0;text-decoration:none}.reading-card{background:var(--paper);border:1px solid var(--line);padding:1.5rem;margin:0 0 1rem}.question{font-size:clamp(1.7rem,4vw,2.65rem);line-height:1.18;border-left:4px solid var(--rust);padding-left:1.1rem}.layers{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}.layer{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem}.sourcebox{background:#fff8ee;border:1px solid #dec9aa;padding:1.15rem}.nextbox{background:var(--ink);color:#fff;border-radius:16px;padding:1.3rem;margin-top:1rem}.nextbox a{color:#fff}.notebook textarea{width:100%;min-height:150px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem}.notebook button{border:0;background:var(--green);color:#fff;border-radius:999px;padding:.6rem .9rem;cursor:pointer}.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.method-card{border-top:3px solid var(--green);padding:1rem;background:var(--paper)}.sources li{margin:.5rem 0}.kbd{font:12px Arial,sans-serif;background:#fff;border:1px solid var(--line);border-radius:5px;padding:.12rem .3rem}footer{display:grid;grid-template-columns:1fr 1fr;gap:2rem;font:13px Arial,sans-serif;color:var(--muted)}.focus .hero,.focus #percurso,.focus #metodo,.focus #fontes,footer{display:none}.roomy{line-height:2}@media(max-width:780px){header{flex-wrap:wrap}nav{order:3;width:100%;margin-left:0;padding-bottom:.2rem}.hero,.intro,.reading-layout,footer{grid-template-columns:1fr}.hero{min-height:auto}.side{position:static;display:flex;gap:.8rem;overflow-x:auto}.side a{white-space:nowrap}.period summary{grid-template-columns:82px 1fr}.period summary .status{grid-column:2}.period-body{padding-left:82px}.layers,.method-grid{grid-template-columns:1fr 1fr}.hero,.section,footer{padding-left:1rem;padding-right:1rem}}@media(max-width:480px){.layers,.method-grid{grid-template-columns:1fr}.period summary{grid-template-columns:1fr}.period summary .status{grid-column:1}.period-body{padding-left:0}.stop{grid-template-columns:30px 1fr}.stop .status{grid-column:2}.tools{margin-left:auto}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.top,.hero,#percurso,#metodo,#fontes,footer,.notebook button{display:none!important}body{background:#fff}.section{padding:0}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Percurso gratuito e guiado de leitura filosófica: passagens verificáveis, contexto, perguntas e fontes abertas ou gratuitas.">
+  <meta name="author" content="Sidiney Rodrigues">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#16483a">
+  <link rel="canonical" href="https://sidineyr.github.io/filosofia-aberta/">
+  <link rel="stylesheet" href="assets/styles.css">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Filosofia Aberta">
+  <meta property="og:description" content="Percurso gratuito e guiado de leitura filosófica: passagens verificáveis, contexto, perguntas e fontes abertas ou gratuitas.">
+  <meta property="og:url" content="https://sidineyr.github.io/filosofia-aberta/">
+  <title>Filosofia Aberta</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"Filosofia Aberta — percurso de leitura filosófica","description":"Percurso gratuito e guiado por textos primários, contexto e perguntas filosóficas.","provider":{"@type":"Person","name":"Sidiney Rodrigues"},"isAccessibleForFree":true,"inLanguage":"pt-BR","url":"https://sidineyr.github.io/filosofia-aberta/"}</script>
 </head>
-<body>
-<a class="skip" href="#conteudo">Pular para o conteúdo</a>
-<div class="top"><header><a class="brand" href="#inicio"><b>Φ</b>Filosofia Aberta</a><nav aria-label="Navegação principal"><a href="#percurso">Percurso</a><a href="#leitura">Leitura atual</a><a href="#metodo">Método</a><a href="#fontes">Fontes</a></nav><div class="tools" aria-label="Ferramentas de leitura"><button id="focus" type="button" aria-pressed="false">Foco</button><button id="minus" type="button" aria-label="Diminuir texto">A−</button><button id="plus" type="button" aria-label="Aumentar texto">A+</button><button id="space" type="button" aria-pressed="false">↕</button></div></header></div>
-<main id="conteudo">
-<section class="hero" id="inicio"><div><p class="eyebrow">Percurso cronológico de leituras</p><h1>Comece aqui.<br>Depois continue.</h1><p class="lead">Filosofia Aberta é uma biblioteca guiada e gratuita para percorrer a Filosofia por seus textos, perguntas e debates. A cronologia orienta; a leitura é a unidade fundamental.</p><a class="btn primary" id="continueTop" href="#leitura">Continuar minha leitura</a><a class="btn" href="#percurso">Ver percurso completo</a><p class="meta">Sem cadastro. O progresso e as anotações ficam apenas neste navegador.</p></div><aside class="hero-card"><p class="eyebrow">Onde você está</p><h3 id="currentLabel">Antiguidade · Sócrates via Platão</h3><p>Primeiro módulo integral revisado: <em>Apologia</em>, com foco em 38a e no problema da vida examinada.</p><div class="progress" aria-label="Progresso do percurso"><span id="progressBar"></span></div><p class="meta" style="color:#e5eee8"><span id="progressText">0</span>% concluído neste protótipo.</p></aside></section>
-<section id="percurso" class="section"><div class="intro"><div><p class="eyebrow">Mapa do percurso</p><h2>A história como conversa, não como catálogo.</h2></div><p class="muted">O eixo Antiga → Medieval → Moderna → Contemporânea aparece de forma recorrente em cursos federais. Dentro de cada período, autores e obras são selecionados por recorrência curricular, relevância pedagógica e disponibilidade de fontes verificáveis. Itens ainda não revisados ficam marcados como planejados.</p></div><div class="path">
-<details class="period" open><summary><time>c. séc. VI a.C.–VI d.C.</time><div><h3>1. Filosofia Antiga</h3><p class="meta">Do problema da natureza às escolas helenísticas e ao neoplatonismo.</p></div><span class="status">em construção</span></summary><div class="period-body"><div class="stops"><div class="stop planned"><span class="dot">1</span><div><strong>Pré-socráticos</strong><div class="meta">Fragmentos, princípio da natureza, ser e mudança.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">2</span><div><strong>Sofistas</strong><div class="meta">Linguagem, persuasão, relatividade e educação.</div></div><span class="status">planejado</span></div><div class="stop ready"><span class="dot">3</span><div><strong><a href="#leitura">Sócrates via Platão — <em>Apologia</em></a></strong><div class="meta">Como examinar a vida sem confundir personagem, fonte e reconstrução histórica?</div></div><span class="status">disponível</span></div><div class="stop planned"><span class="dot">4</span><div><strong>Platão</strong><div class="meta">Conhecimento, justiça, alma e cidade.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">5</span><div><strong>Aristóteles</strong><div class="meta">Causas, substância, virtude e vida boa.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">6</span><div><strong>Helenismo e neoplatonismo</strong><div class="meta">Epicurismo, estoicismo, ceticismo e Plotino.</div></div><span class="status">planejado</span></div></div></div></details>
-<details class="period"><summary><time>séc. IV–XIV</time><div><h3>2. Filosofia Medieval</h3><p class="meta">Fé e razão, interioridade, universais, metafísica e lei.</p></div><span class="status">planejado</span></summary><div class="period-body"><div class="stops"><div class="stop planned"><span class="dot">7</span><div><strong>Agostinho</strong><div class="meta">Interioridade, tempo, vontade e conhecimento.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">8</span><div><strong>Tomás de Aquino</strong><div class="meta">Ser, causalidade, lei e relação entre razão e teologia.</div></div><span class="status">planejado</span></div></div></div></details>
-<details class="period"><summary><time>séc. XVI–XVIII</time><div><h3>3. Filosofia Moderna</h3><p class="meta">Método, conhecimento, experiência, política e limites da razão.</p></div><span class="status">planejado</span></summary><div class="period-body"><div class="stops"><div class="stop planned"><span class="dot">9</span><div><strong>Descartes</strong><div class="meta">Dúvida metódica e fundamento do conhecimento.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">10</span><div><strong>Hobbes · Locke · Hume</strong><div class="meta">Política, experiência, ideias e causalidade.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">11</span><div><strong>Rousseau · Kant</strong><div class="meta">Autonomia, liberdade e crítica da razão.</div></div><span class="status">planejado</span></div></div></div></details>
-<details class="period"><summary><time>séc. XIX–XXI</time><div><h3>4. Filosofia Contemporânea</h3><p class="meta">História, existência, linguagem, poder, ciência e sociedade.</p></div><span class="status">planejado</span></summary><div class="period-body"><div class="stops"><div class="stop planned"><span class="dot">12</span><div><strong>Hegel · Marx · Nietzsche</strong><div class="meta">História, crítica social, valores e genealogia.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">13</span><div><strong>Fenomenologia e existência</strong><div class="meta">Husserl, Heidegger, Sartre e Beauvoir, conforme revisão curricular.</div></div><span class="status">planejado</span></div><div class="stop planned"><span class="dot">14</span><div><strong>Linguagem, ciência e política contemporânea</strong><div class="meta">Percursos transversais serão adicionados sem apagar divergências entre tradições.</div></div><span class="status">planejado</span></div></div></div></details>
-</div></section>
-<section id="leitura" class="section"><div class="intro"><div><p class="eyebrow">Leitura 01 disponível</p><h2>Sócrates via Platão: por que examinar a própria vida?</h2></div><p class="muted">Este módulo não transforma Sócrates em uma biografia pronta. Ele ensina a distinguir o Sócrates histórico, o personagem de Platão, a passagem antiga, a tradução e a interpretação.</p></div><div class="reading-layout"><aside class="side" aria-label="Etapas da leitura"><a href="#onde">Onde estou?</a><a href="#pergunta">Pergunta</a><a href="#obra">O que ler</a><a href="#texto">Passagem</a><a href="#depois">Depois da leitura</a><a href="#caderno">Caderno</a></aside><div>
-<article id="onde" class="reading-card"><span class="tag">Onde estou?</span><h3>Atenas, século V a.C. — mas o texto é de Platão.</h3><p>Sócrates não deixou escritos. A <em>Apologia</em> é uma obra de Platão que representa sua defesa. Isso cria uma regra de leitura: quando atribuímos uma ideia a Sócrates, precisamos indicar de qual testemunho estamos falando.</p><div class="layers"><div class="layer"><strong>Contexto</strong><p class="meta">Sócrates histórico é reconstruído por fontes posteriores e divergentes.</p></div><div class="layer"><strong>Fonte</strong><p class="meta"><em>Apologia</em> é texto de Platão, não transcrição neutra de um tribunal.</p></div><div class="layer"><strong>Leitura</strong><p class="meta">Nossa tarefa é perguntar o que o texto sustenta e o que já é interpretação.</p></div></div><p class="nextbox"><strong>Próxima pergunta:</strong> por que uma vida precisa ser examinada?</p></article>
-<article id="pergunta" class="reading-card"><span class="tag">Pergunta filosófica</span><p class="question">O que torna uma vida digna de ser vivida — e que papel o exame de si tem nisso?</p><p>Na <em>Apologia</em>, a pergunta aparece ligada à atividade filosófica, ao cuidado da alma, à virtude e ao exame das pretensões de saber. Não comece pela frase famosa isolada: chegue até ela pelo argumento.</p></article>
-<article id="obra" class="reading-card"><span class="tag">O que vou ler?</span><h3>Platão, <em>Apologia de Sócrates</em></h3><p>Para este módulo, leia primeiro o entorno de 38a e, se possível, volte a 21a–23b e 29d–30b para reconhecer dois fios: o episódio do oráculo e o cuidado da alma.</p><div class="sourcebox"><strong>Fonte primária de referência</strong><p><a href="https://www.perseus.tufts.edu/hopper/text?doc=plat.+apol.+38a" target="_blank" rel="noopener noreferrer">Perseus — <em>Apologia</em> 38a</a></p><p class="meta">Missão: localizar a passagem no texto e verificar seu contexto. O link abre em nova aba; depois retorne aqui.</p></div></article>
-<article id="texto" class="reading-card"><span class="tag">Texto, tradução e interpretação</span><h3>Não trate uma tradução como se fosse o original.</h3><p>A construção grega de 38a costuma ser vertida de formas diferentes. O projeto mantém como tradução de trabalho a ideia de que “a vida não examinada não é vivível para um ser humano” e registra a formulação idiomática tradicional “a vida sem exame não vale a pena ser vivida”.</p><p class="meta">Ambas são traduções/formulações em português. Para comparar, consulte o grego e traduções catalogadas no Perseus.</p><div class="sourcebox"><a href="https://catalog.perseus.tufts.edu/catalog/urn:cts:greekLit:tlg0059.tlg002" target="_blank" rel="noopener noreferrer">Perseus Catalog — Plato, <em>Apology</em></a><br><span class="meta">Missão: verificar edição, obra e tradição textual.</span></div></article>
-<article id="depois" class="reading-card"><span class="tag">Depois da leitura</span><h3>Responda antes de continuar.</h3><ol><li>Qual problema Sócrates enfrenta nesse ponto da obra?</li><li>O que a passagem menciona antes da afirmação sobre a vida não examinada?</li><li>Qual diferença você percebe entre texto, tradução e interpretação?</li><li>Você concorda que uma vida precisa ser examinada? Por quê?</li></ol><p class="nextbox"><strong>Transição:</strong> Platão transforma Sócrates em personagem de muitos diálogos. O próximo módulo completo deverá perguntar o que muda quando passamos da defesa socrática para problemas propriamente platônicos.</p></article>
-<article id="caderno" class="reading-card notebook"><span class="tag">Seu caderno</span><h3>O que você sustenta agora?</h3><textarea id="notes" aria-label="Anotações da leitura" placeholder="Escreva com suas palavras: o que significa examinar a vida?"></textarea><p><button id="complete" type="button">Marcar leitura como concluída</button> <span id="saved" class="meta" role="status"></span></p></article>
-</div></div></section>
-<section id="metodo" class="section"><div class="intro"><div><p class="eyebrow">Como construímos este percurso?</p><h2>Currículo comparado, não cânone inventado.</h2></div><p class="muted">O percurso combina documentos institucionais de universidades federais, leitura de fontes primárias e decisões pedagógicas transparentes. Recorrência aumenta relevância; não cria unanimidade.</p></div><div class="method-grid"><article class="method-card"><strong>1. Comparar</strong><p>Examinar PPCs, ementas, matrizes e planos públicos.</p></article><article class="method-card"><strong>2. Selecionar</strong><p>Priorizar autores, problemas e obras recorrentes, registrando divergências.</p></article><article class="method-card"><strong>3. Verificar</strong><p>Localizar textos primários, edições e fontes legais.</p></article><article class="method-card"><strong>4. Ensinar</strong><p>Transformar bibliografia em sequência: ler → compreender → refletir → continuar.</p></article></div><p class="meta">A estrutura histórica Antiga/Medieval/Moderna/Contemporânea é confirmada por materiais institucionais da UFSC e da UFSCar. A sequência antiga apresentada como base de trabalho é corroborada por ementas da UFPel. O site não afirma que exista um único currículo federal de Filosofia.</p></section>
-<section id="fontes" class="section"><div class="intro"><div><p class="eyebrow">Fontes e transparência</p><h2>Saiba de onde veio cada decisão.</h2></div><p class="muted">Fontes curriculares orientam o percurso; textos primários orientam a leitura; referências acadêmicas ajudam a contextualizar e comparar interpretações.</p></div><ul class="sources"><li><a href="https://filosofia.ufsc.br/sobre-o-curso/" target="_blank" rel="noopener noreferrer">UFSC — Curso de Graduação em Filosofia</a>: confirma quatro componentes históricos, da Antiga à Contemporânea.</li><li><a href="https://www.prograd.ufscar.br/pt-br/cursos/cursos-oferecidos/filosofia" target="_blank" rel="noopener noreferrer">UFSCar — Filosofia</a>: destaca formação sólida em História da Filosofia e disponibiliza PPCs e matrizes.</li><li><a href="https://institucional.ufpel.edu.br/disciplinas/cod/0730135" target="_blank" rel="noopener noreferrer">UFPel — História da Filosofia Antiga</a>: explicita pré-socráticos, sofistas, Sócrates, Platão, Aristóteles, helenismo e neoplatonismo.</li><li><a href="https://www.perseus.tufts.edu/hopper/text?doc=plat.+apol.+38a" target="_blank" rel="noopener noreferrer">Perseus — Platão, <em>Apologia</em> 38a</a>: fonte primária do módulo disponível.</li><li><a href="https://plato.stanford.edu/entries/socrates/" target="_blank" rel="noopener noreferrer">Stanford Encyclopedia of Philosophy — Socrates</a>: referência acadêmica para o problema socrático.</li></ul><p class="meta">Autoria e concepção: <strong>Sidiney Rodrigues</strong>. Projeto experimental, gratuito e em desenvolvimento. Conteúdo autoral: CC BY 4.0, salvo indicação diferente. Desenvolvimento e revisão com apoio de IA da OpenAI; isso não constitui parceria institucional nem endosso acadêmico.</p></section>
-</main>
-<footer><div><strong>Filosofia Aberta</strong><br>Um caminho pelos textos que ensinaram gerações a pensar.</div><div>Atalho: pressione <span class="kbd">Tab</span> para navegar por teclado. Preferências de tamanho e espaçamento ficam no navegador.</div></footer>
-<script>
-const root=document.documentElement,body=document.body;let fs=Number(localStorage.getItem('fa-fs')||18);root.style.setProperty('--fs',fs+'px');
-const notes=document.getElementById('notes');notes.value=localStorage.getItem('fa-notes-socrates')||'';notes.addEventListener('input',()=>{localStorage.setItem('fa-notes-socrates',notes.value);document.getElementById('saved').textContent='anotação salva';});
-function renderProgress(){const done=localStorage.getItem('fa-socrates-done')==='1';const pct=done?100:0;document.getElementById('progressBar').style.width=pct+'%';document.getElementById('progressText').textContent=pct;document.getElementById('complete').textContent=done?'Leitura concluída ✓':'Marcar leitura como concluída';}
-document.getElementById('complete').addEventListener('click',()=>{const done=localStorage.getItem('fa-socrates-done')==='1';localStorage.setItem('fa-socrates-done',done?'0':'1');renderProgress();});renderProgress();
-document.getElementById('plus').onclick=()=>{fs=Math.min(24,fs+1);root.style.setProperty('--fs',fs+'px');localStorage.setItem('fa-fs',fs)};document.getElementById('minus').onclick=()=>{fs=Math.max(15,fs-1);root.style.setProperty('--fs',fs+'px');localStorage.setItem('fa-fs',fs)};
-document.getElementById('focus').onclick=e=>{body.classList.toggle('focus');e.currentTarget.setAttribute('aria-pressed',body.classList.contains('focus'))};document.getElementById('space').onclick=e=>{body.classList.toggle('roomy');e.currentTarget.setAttribute('aria-pressed',body.classList.contains('roomy'))};
-</script>
-</body></html>
+<body class="" data-core-modules="heraclito-mudanca,protagoras-medida,socrates-vida-examinada,platao-caverna,aristoteles-vida-boa,helenismo-cuidado,agostinho-tempo,tomas-causalidade,descartes-duvida,hobbes-locke-hume,rousseau-kant-autonomia,hegel-marx-nietzsche,fenomenologia-existencia,linguagem-ciencia-politica">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Filosofia Aberta — página inicial">
+        <span class="brand-mark" aria-hidden="true">Φ</span><span class="brand-name">Filosofia Aberta</span>
+      </a>
+      <nav class="site-nav" aria-label="Navegação principal">
+        <a href="index.html#percurso" aria-current="page">Percurso</a><a href="index.html#rotas">Rotas</a><a href="biblioteca.html">Biblioteca</a><a href="fontes.html">Fontes e método</a>
+      </nav>
+
+  <div class="reading-tools" aria-label="Ferramentas de leitura">
+    <button class="tool-button" type="button" data-focus aria-pressed="false" title="Alternar modo de foco">Foco</button>
+    <button class="tool-button" type="button" data-font="decrease" aria-label="Diminuir tamanho do texto">A−</button>
+    <button class="tool-button" type="button" data-font="increase" aria-label="Aumentar tamanho do texto">A+</button>
+    <button class="tool-button" type="button" data-space aria-pressed="false" aria-label="Alternar espaçamento ampliado">↕</button>
+  </div>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="wrap hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">Um percurso aberto de leitura filosófica</p>
+        <h1>Leia uma passagem. Siga a pergunta.</h1>
+        <p class="lead">Filosofia Aberta conduz você por textos primários, explicações breves e perguntas que levam à próxima leitura. A cronologia orienta; não transforma a Filosofia numa lista de nomes.</p>
+        <div class="actions">
+          <a class="button button-primary" data-continue href="leituras/heraclito-mudanca.html">Começar pelo início</a>
+          <a class="button" href="#percurso">Ver as 14 etapas</a>
+        </div>
+        <p class="meta">Sem cadastro. Progresso e anotações permanecem somente neste navegador.</p>
+      </div>
+      <aside class="hero-panel" aria-labelledby="seu-percurso">
+        <p class="eyebrow">Seu percurso</p>
+        <h2 id="seu-percurso" style="font-size:clamp(1.8rem,3vw,2.7rem)">Do fragmento à pergunta contemporânea.</h2>
+        <div class="progress-track" data-progress-track role="progressbar" aria-label="Progresso no percurso principal" aria-valuemin="0" aria-valuemax="14" aria-valuenow="0" aria-valuetext="0 de 14 leituras concluídas"><div class="progress-fill" data-progress-fill aria-hidden="true"></div></div>
+        <p class="meta" data-progress-text role="status" aria-live="polite" style="color:#e7eee9">0 de 14 leituras concluídas (0%)</p>
+        <div class="stat-row" aria-label="Conteúdo disponível">
+          <div class="stat"><strong>14</strong><span class="meta">etapas cronológicas</span></div>
+          <div class="stat"><strong>3</strong><span class="meta">rotas em diálogo</span></div>
+          <div class="stat"><strong>42</strong><span class="meta">leituras sugeridas</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section" aria-labelledby="como-funciona">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Como funciona</p><h2 id="como-funciona">Ler → compreender → refletir → continuar.</h2></div>
+          <p class="muted">Cada etapa começa por uma pergunta, apresenta um trecho localizável, distingue tradução de interpretação e oferece uma pequena seleção de fontes legalmente acessíveis.</p>
+        </div>
+        <div class="principle-grid">
+          <article class="principle-card"><span class="principle-number">01</span><h3>Ler</h3><p>Encontre autor, obra, passagem, edição e situação de acesso antes de repetir uma frase.</p></article>
+          <article class="principle-card"><span class="principle-number">02</span><h3>Compreender</h3><p>Reconstrua o problema e os conceitos sem esconder dificuldades ou divergências.</p></article>
+          <article class="principle-card"><span class="principle-number">03</span><h3>Refletir</h3><p>Teste o argumento com duas perguntas e registre sua própria posição.</p></article>
+          <article class="principle-card"><span class="principle-number">04</span><h3>Continuar</h3><p>Veja a relação — continuidade, crítica ou ruptura — que abre a leitura seguinte.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="percurso" aria-labelledby="titulo-percurso">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Percurso principal</p><h2 id="titulo-percurso">Quatorze paradas, uma conversa em movimento.</h2></div>
+          <p class="muted">Antiga, Medieval, Moderna e Contemporânea são um eixo pedagógico recorrente — não uma história universal completa nem uma marcha inevitável de progresso.</p>
+        </div>
+        <div class="path">
+    <details class="period" open>
+      <summary>
+        <h3>
+          <time>c. séc. VI a.C.–VI d.C.</time>
+          <span class="period-copy"><span class="period-name">Filosofia Antiga</span><span class="meta period-description">Natureza, linguagem, vida examinada, conhecimento, virtude e modos de viver.</span></span>
+        </h3>
+      </summary>
+      <ol class="stop-list">
+
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">1</span>
+            <a href="leituras/heraclito-mudanca.html">Heráclito e a mudança</a>
+            <p class="meta">Como algo pode manter unidade se está sempre atravessado por diferenças e mudanças? · 25–35 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">2</span>
+            <a href="leituras/protagoras-medida.html">Protágoras e a medida</a>
+            <p class="meta">Quando duas pessoas percebem a mesma situação de modos diferentes, existe uma medida comum? · 25–35 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">3</span>
+            <a href="leituras/socrates-vida-examinada.html">Sócrates e a vida examinada</a>
+            <p class="meta">O que torna uma vida digna de ser vivida — e que papel o exame de si tem nisso? · 30–40 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">4</span>
+            <a href="leituras/platao-caverna.html">Platão e a caverna</a>
+            <p class="meta">Educar é transmitir informações ou reorientar a maneira como alguém vê? · 30–40 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">5</span>
+            <a href="leituras/aristoteles-vida-boa.html">Aristóteles e a vida boa</a>
+            <p class="meta">Uma vida boa depende de sentir-se bem ou de exercer bem certas capacidades ao longo do tempo? · 30–40 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">6</span>
+            <a href="leituras/helenismo-cuidado.html">Epicuro, Epicteto e o cuidado</a>
+            <p class="meta">Como cuidar da vida quando desejos, perdas e acontecimentos não obedecem à nossa vontade? · 35–45 min</p>
+          </li>
+      </ol>
+    </details>
+    <details class="period">
+      <summary>
+        <h3>
+          <time>séc. IV–XIV</time>
+          <span class="period-copy"><span class="period-name">Filosofia Medieval</span><span class="meta period-description">Tempo, criação, causalidade e as relações — tensas e produtivas — entre fé e razão.</span></span>
+        </h3>
+      </summary>
+      <ol class="stop-list">
+
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">7</span>
+            <a href="leituras/agostinho-tempo.html">Agostinho e o tempo</a>
+            <p class="meta">Como medimos passado e futuro se o primeiro já não é e o segundo ainda não é? · 30–40 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">8</span>
+            <a href="leituras/tomas-causalidade.html">Tomás de Aquino e a causalidade</a>
+            <p class="meta">Até onde uma explicação causal pode regressar — e o que seria necessário para ela começar? · 35–45 min</p>
+          </li>
+      </ol>
+    </details>
+    <details class="period">
+      <summary>
+        <h3>
+          <time>séc. XVI–XVIII</time>
+          <span class="period-copy"><span class="period-name">Filosofia Moderna</span><span class="meta period-description">Método, experiência, liberdade, autoridade política e limites da razão.</span></span>
+        </h3>
+      </summary>
+      <ol class="stop-list">
+
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">9</span>
+            <a href="leituras/descartes-duvida.html">Descartes e a dúvida</a>
+            <p class="meta">É possível duvidar de tudo sem perder o próprio ato de duvidar? · 30–40 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">10</span>
+            <a href="leituras/hobbes-locke-hume.html">Hobbes, Locke e Hume</a>
+            <p class="meta">O que sustenta a ordem política e por que esperamos que o futuro se pareça com o passado? · 45–60 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">11</span>
+            <a href="leituras/rousseau-kant-autonomia.html">Rousseau, Kant e autonomia</a>
+            <p class="meta">Ser livre é não encontrar obstáculos ou obedecer a uma regra que se pode reconhecer como própria? · 40–55 min</p>
+          </li>
+      </ol>
+    </details>
+    <details class="period">
+      <summary>
+        <h3>
+          <time>séc. XIX–XXI</time>
+          <span class="period-copy"><span class="period-name">Filosofia Contemporânea</span><span class="meta period-description">História, crítica social, existência, linguagem, ciência, raça e poder.</span></span>
+        </h3>
+      </summary>
+      <ol class="stop-list">
+
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">12</span>
+            <a href="leituras/hegel-marx-nietzsche.html">Hegel, Marx e Nietzsche</a>
+            <p class="meta">Como ideias, práticas e valores se tornam históricos — e o que a filosofia faz quando os reconhece assim? · 45–60 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">13</span>
+            <a href="leituras/fenomenologia-existencia.html">Fenomenologia e existência</a>
+            <p class="meta">A consciência é uma coisa fechada dentro de nós ou um modo de estar dirigido ao mundo e aos outros? · 40–55 min</p>
+          </li>
+          <li class="stop">
+            <span class="stop-number" aria-hidden="true">14</span>
+            <a href="leituras/linguagem-ciencia-politica.html">Linguagem, ciência e política</a>
+            <p class="meta">Uma proposição apenas nomeia coisas ou organiza relações — e o que acontece quando categorias organizam também vidas sociais? · 40–55 min</p>
+          </li>
+      </ol>
+    </details></div>
+      </div>
+    </section>
+
+    <section class="section" id="rotas" aria-labelledby="titulo-rotas">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Rotas em diálogo</p><h2 id="titulo-rotas">A linha europeia não contém todas as perguntas.</h2></div>
+          <p class="muted">Estas entradas correm ao lado do eixo cronológico. Aproximar não é declarar equivalência: cada rota explicita idioma, transmissão, contexto e limite da comparação.</p>
+        </div>
+        <div class="route-grid">
+    <article class="route-card">
+      <p class="card-label">Leste Asiático</p>
+      <h3>Confúcio e a prática</h3>
+      <p>O conhecimento transforma alguém sem prática, tempo e relação com outras pessoas?</p>
+      <div class="chip-row" aria-label="Informações da leitura">
+        <span class="chip">25–35 min</span>
+        <span class="chip">inicial</span>
+      </div>
+      <p><a class="card-link" href="leituras/confucio-aprender.html">Abrir esta rota</a></p>
+    </article>
+    <article class="route-card">
+      <p class="card-label">Sul da Ásia</p>
+      <h3>Dhammapada e a mente</h3>
+      <p>Como disposições mentais participam do sofrimento sem tornar cada pessoa culpada por tudo que lhe acontece?</p>
+      <div class="chip-row" aria-label="Informações da leitura">
+        <span class="chip">25–35 min</span>
+        <span class="chip">inicial</span>
+      </div>
+      <p><a class="card-link" href="leituras/dhammapada-mente.html">Abrir esta rota</a></p>
+    </article>
+    <article class="route-card">
+      <p class="card-label">América Latina e Brasil</p>
+      <h3>Sor Juana, Nísia e educação</h3>
+      <p>Que contradições aparecem quando uma sociedade exige condutas das mulheres e bloqueia seu acesso à formação e à palavra pública?</p>
+      <div class="chip-row" aria-label="Informações da leitura">
+        <span class="chip">30–40 min</span>
+        <span class="chip">inicial</span>
+      </div>
+      <p><a class="card-link" href="leituras/sor-juana-nisia-educacao.html">Abrir esta rota</a></p>
+    </article></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="titulo-base">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow">Base acadêmica ampliada</p><h2 id="titulo-base">Muitas instituições, nenhum currículo único.</h2></div>
+          <p class="muted">O percurso agora compara universidades federais, estaduais e comunitárias/confessionais, além de associações, bibliotecas e cursos internacionais abertos.</p>
+        </div>
+        <div class="institution-grid">
+
+            <article class="institution-card">
+              <p class="card-label">Universidade federal</p>
+              <h3><a href="https://filosofia.ufsc.br/sobre-o-curso/" target="_blank" rel="noopener noreferrer">Universidade Federal de Santa Catarina — UFSC<span class="sr-only"> (abre em nova aba)</span></a></h3>
+              <p>Organização histórica da formação em Filosofia Antiga, Medieval, Moderna e Contemporânea.</p>
+            </article>
+            <article class="institution-card">
+              <p class="card-label">Universidade federal</p>
+              <h3><a href="https://www.prograd.ufscar.br/pt-br/cursos/cursos-oferecidos/filosofia" target="_blank" rel="noopener noreferrer">Universidade Federal de São Carlos — UFSCar<span class="sr-only"> (abre em nova aba)</span></a></h3>
+              <p>Ênfase na História da Filosofia e acesso público a projetos pedagógicos e matrizes.</p>
+            </article>
+            <article class="institution-card">
+              <p class="card-label">Universidade federal</p>
+              <h3><a href="https://institucional.ufpel.edu.br/disciplinas/cod/0730135" target="_blank" rel="noopener noreferrer">Universidade Federal de Pelotas — UFPel<span class="sr-only"> (abre em nova aba)</span></a></h3>
+              <p>Sequência de História da Filosofia Antiga, dos pré-socráticos ao neoplatonismo.</p>
+            </article>
+            <article class="institution-card">
+              <p class="card-label">Universidade federal</p>
+              <h3><a href="https://dpsofia.ufba.br/ementas/disciplinas-gerais" target="_blank" rel="noopener noreferrer">Universidade Federal da Bahia — UFBA<span class="sr-only"> (abre em nova aba)</span></a></h3>
+              <p>Convivência entre História da Filosofia e componentes sistemáticos como lógica, ética e estética.</p>
+            </article>
+            <article class="institution-card">
+              <p class="card-label">Universidade estadual</p>
+              <h3><a href="https://filosofia.fflch.usp.br/graduacao" target="_blank" rel="noopener noreferrer">Universidade de São Paulo — USP<span class="sr-only"> (abre em nova aba)</span></a></h3>
+              <p>Estudo aprofundado de autores e problemas, evitando panoramas apenas superficiais.</p>
+            </article>
+            <article class="institution-card">
+              <p class="card-label">Comunitária e confessional</p>
+              <h3><a href="https://www.pucsp.br/graduacao/filosofia" target="_blank" rel="noopener noreferrer">Pontifícia Universidade Católica de São Paulo — PUC-SP<span class="sr-only"> (abre em nova aba)</span></a></h3>
+              <p>Pluralidade de tradições e presença de filosofia brasileira, latino-americana, africana, gênero e tecnologia.</p>
+            </article>
+        </div>
+        <div class="actions"><a class="button" href="fontes.html">Ver todas as fontes e o método</a></div>
+      </div>
+    </section>
+
+    <section class="section section-compact">
+      <div class="wrap dark-panel">
+        <p class="eyebrow">Próxima ação</p>
+        <h2>Comece com uma pergunta pequena.</h2>
+        <p class="lead" style="color:#e7eee9">Como algo permanece reconhecível enquanto muda? Heráclito abre o percurso com um fragmento — e com um aviso para não confundir a voz do autor com a razão que você pode examinar.</p>
+        <div class="actions"><a class="button button-primary" href="leituras/heraclito-mudanca.html">Ler Heráclito</a><a class="button" style="color:#fff;border-color:#fff" href="biblioteca.html">Explorar a biblioteca</a></div>
+      </div>
+    </section></main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <strong>Filosofia Aberta</strong><br>
+        Concepção e autoria: Sidiney Rodrigues. Conteúdo autoral sob CC BY 4.0, salvo indicação diferente. Projeto educacional gratuito e experimental.
+      </div>
+      <nav class="footer-links" aria-label="Navegação do rodapé">
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="fontes.html">Fontes, método e direitos</a>
+        <a href="https://github.com/sidineyr/filosofia-aberta">Código no GitHub</a>
+      </nav>
+    </div>
+  </footer>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "filosofia-aberta",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Percurso aberto e guiado de leitura filosófica.",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "check": "node scripts/check-site.mjs",
+    "test": "npm run build && node --check assets/app.js && npm run check"
+  },
+  "license": "CC-BY-4.0"
+}

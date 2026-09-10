@@ -7,16 +7,16 @@ authors:
     given-names: "Sidiney"
 repository-code: "https://github.com/sidineyr/filosofia-aberta"
 url: "https://sidineyr.github.io/filosofia-aberta/"
-version: "0.2.0"
-date-released: "2026-09-08"
+version: "0.3.0"
+date-released: "2026-09-10"
 license: "CC-BY-4.0"
-abstract: "Projeto educacional experimental, gratuito e aberto para leitura orientada de clássicos da Filosofia, organizado pelo princípio 'Uma pergunta leva à próxima'."
+abstract: "Projeto educacional experimental, gratuito e aberto com 14 etapas cronológicas e rotas paralelas para leitura orientada de Filosofia."
 keywords:
   - philosophy
   - philosophy-education
   - open-education
-  - socrates
-  - plato
-  - classical-philosophy
+  - primary-sources
+  - open-readings
+  - philosophy-curriculum
   - guided-reading
   - accessibility

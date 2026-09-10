@@ -35,7 +35,25 @@ Links externos devem ter:
 
 ## Novos módulos
 
-Um módulo só deve ser marcado como disponível depois de cumprir a lista de controle registrada em `QA_REVIEW.md`.
+Um módulo só deve ser publicado depois de cumprir a lista de controle registrada em `QA_REVIEW.md`.
+
+O conteúdo fica em `content/site-data.mjs`; os arquivos HTML de `leituras/` são gerados. Evite editar uma página gerada isoladamente, pois a próxima construção substituirá a mudança.
+
+Antes de enviar uma contribuição, execute:
+
+```bash
+npm test
+```
+
+O teste regenera o site, verifica a sintaxe do JavaScript e confere conteúdo, metadados, acessibilidade básica, links e âncoras internas.
+
+## Direitos e acesso
+
+- Identifique sempre a edição ou base digital e a passagem exata.
+- Chame um recurso de “aberto” apenas quando houver licença compatível ou domínio público aplicável.
+- Quando o material for apenas gratuito para consulta, descreva-o como “acesso gratuito”.
+- Não reproduza trechos longos de obras protegidas.
+- Para tradições orais ou saberes comunitários, verifique autoria, proveniência, autorização e contexto antes de publicar.
 
 ## Créditos
 
