@@ -73,6 +73,7 @@ function footer(prefix) {
         <a href="${prefix}biblioteca.html">Biblioteca</a>
         <a href="${prefix}fontes.html">Fontes, método e direitos</a>
         <a href="${site.repository}">Código no GitHub</a>
+        <a href="https://sidineyr.github.io/">Outros projetos educacionais</a>
       </nav>
     </div>
   </footer>`;
@@ -90,7 +91,7 @@ function layout({
   schema,
 }) {
   const canonical = `${site.baseUrl}${canonicalPath}`;
-  const pageTitle = title === site.name ? site.name : `${title} — ${site.name}`;
+  const pageTitle = title === site.name ? "Filosofia para iniciantes — curso gratuito | Filosofia Aberta" : `${title} — ${site.name}`;
   const jsonLd = schema
     ? `<script type="application/ld+json">${JSON.stringify(schema).replaceAll("<", "\\u003c")}</script>`
     : "";
@@ -100,6 +101,7 @@ function layout({
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="${escapeHtml(description)}">
+  <meta name="keywords" content="filosofia para iniciantes, curso gratuito de filosofia, história da filosofia, textos filosóficos, filosofia antiga, filosofia moderna, leitura dos clássicos">
   <meta name="author" content="${escapeHtml(site.author)}">
   <meta name="robots" content="${escapeHtml(robots)}">
   <meta name="theme-color" content="#16483a">
