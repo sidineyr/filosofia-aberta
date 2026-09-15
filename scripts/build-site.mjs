@@ -101,7 +101,7 @@ function layout({
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="${escapeHtml(description)}">
-  <meta name="keywords" content="filosofia para iniciantes, curso gratuito de filosofia, história da filosofia, textos filosóficos, filosofia antiga, filosofia moderna, leitura dos clássicos">
+  <meta name="keywords" content="filosofia para iniciantes, curso gratuito de filosofia, história da filosofia, philosophy for beginners, free philosophy course, history of philosophy, philosophical texts">
   <meta name="author" content="${escapeHtml(site.author)}">
   <meta name="robots" content="${escapeHtml(robots)}">
   <meta name="theme-color" content="#16483a">
@@ -116,10 +116,12 @@ function layout({
   ${jsonLd}
 </head>
 <body class="${escapeHtml(bodyClass)}" data-core-modules="${escapeHtml(coreSlugs)}">
+  <aside aria-label="Language / Idioma" style="position:fixed;right:12px;top:12px;z-index:1000;border:1px solid #b8c9c0;border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.96);box-shadow:0 8px 24px rgba(0,0,0,.12)"><strong style="margin-right:8px;font-size:12px">PT / EN</strong><span id="google_translate_element"></span></aside>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   ${header(prefix, active)}
   <main id="conteudo">${content}</main>
   ${footer(prefix)}
+  <script src="${prefix}assets/language-toggle.js"></script>
   <script src="${prefix}assets/app.js" defer></script>
 </body>
 </html>
