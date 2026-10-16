@@ -659,7 +659,7 @@ ${paths
 }
 
 await mkdir(readingDirectory, { recursive: true });
-await writeFile(path.join(root, "index.html"), cleanOutput(renderHome()), "utf8");
+await writeFile(path.join(root, "index.html"), cleanOutput(renderHome()).replace("</body>", "<p class=\"site-access-counter\"><a href=\"https://hits.sh/sidineyr.github.io/filosofia-aberta/\"><img src=\"https://hits.sh/sidineyr.github.io/filosofia-aberta.svg?style=flat-square&amp;label=acessos&amp;color=167c80\" alt=\"Contador público de acessos\" width=\"120\" height=\"20\" referrerpolicy=\"no-referrer\"></a><small> Acessos desde 16/10/2026. Contador externo Hits; recebe dados técnicos da conexão, sem respostas das atividades.</small></p>" + "</body>"), "utf8");
 await writeFile(path.join(root, "biblioteca.html"), cleanOutput(renderLibrary()), "utf8");
 await writeFile(path.join(root, "fontes.html"), cleanOutput(renderSources()), "utf8");
 await writeFile(path.join(root, "404.html"), cleanOutput(render404()), "utf8");
