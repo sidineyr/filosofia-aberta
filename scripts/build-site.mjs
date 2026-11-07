@@ -114,6 +114,8 @@ function layout({
   <meta property="og:url" content="${canonical}">
   <title>${escapeHtml(pageTitle)}</title>
   ${jsonLd}
+<meta name="google-adsense-account" content="ca-pub-4924241177850142">
+<script defer src="${prefix}assets/educational-ads.js"></script>
 </head>
 <body class="${escapeHtml(bodyClass)}" data-core-modules="${escapeHtml(coreSlugs)}">
   <aside aria-label="Language / Idioma" style="position:fixed;right:12px;top:12px;z-index:1000;border:1px solid #b8c9c0;border-radius:999px;padding:8px 12px;background:rgba(255,255,255,.96);box-shadow:0 8px 24px rgba(0,0,0,.12)"><strong style="margin-right:8px;font-size:12px">PT / EN</strong><span id="google_translate_element"></span></aside>
@@ -123,6 +125,7 @@ function layout({
   ${footer(prefix)}
   <script src="${prefix}assets/language-toggle.js"></script>
   <script src="${prefix}assets/app.js" defer></script>
+<p data-independent-donation style="box-sizing:border-box;max-width:70rem;margin:16px auto;padding:8px 16px;font:12px/1.6 sans-serif;text-align:center"><a href="https://pequenoprincipe.org.br/doadores/apoie-o-pequeno-principe/" target="_blank" rel="noopener noreferrer">Se desejar, doe diretamente ao Hospital Pequeno Príncipe.</a> Iniciativa independente, sem vínculo institucional com o hospital e sem intermediação de doações.</p>
 </body>
 </html>
 `;
