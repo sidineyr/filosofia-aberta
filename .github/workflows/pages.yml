@@ -4,7 +4,8 @@ on:
     branches: [main]
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
+  pages: write
 concurrency:
   group: pages-production
   cancel-in-progress: false
@@ -13,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
@@ -21,19 +24,20 @@ jobs:
           mkdir _site
           rsync -a --exclude='.git/' --exclude='.github/' --exclude='_site/' --exclude='node_modules/' --exclude='scripts/' --exclude='tests/' --exclude='.env*' ./ _site/
           touch _site/.nojekyll
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: _site
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - uses: actions/deploy-pages@v4
-        id: deployment
+      - name: Atualização
+        run: |
+          git fetch origin gh-pages
+          git worktree add _publish origin/gh-pages
+          rsync -a --exclude='.git' _site/ _publish/
+          git -C _publish config user.name 'Sidiney Rodrigues'
+          git -C _publish config user.email '4397607+sidineyr@users.noreply.github.com'
+          git -C _publish add .
+          if ! git -C _publish diff --cached --quiet; then
+            git -C _publish commit -m 'Atualização'
+            git -C _publish push origin HEAD:gh-pages
+          fi
+      - name: Publicar
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
 
