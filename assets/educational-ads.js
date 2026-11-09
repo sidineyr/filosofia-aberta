@@ -84,7 +84,7 @@
   const catalog=document.createElement('a');catalog.href=catalogUrl;catalog.textContent=['Guia de materiais e alternativas gratuitas ↗','Materials and free alternatives ↗','Matériel et alternatives gratuites ↗','Materiales y alternativas gratuitas ↗'][i];
   catalog.style.cssText='display:block;margin-top:12px;font-size:14px;';box.append(catalog);
   const amazonLink=document.createElement('a');amazonLink.href="https://link.amazon/B03qJSe3L";amazonLink.target='_blank';amazonLink.rel='sponsored noopener noreferrer';amazonLink.textContent="Livros de filosofia na Amazon";amazonLink.style.cssText='display:block;margin-top:12px;font-size:14px;';
-  const amazonNotice=document.createElement('p');amazonNotice.textContent='Publicidade. Como participante do Programa de Associados da Amazon, sou remunerado pelas compras qualificadas efetuadas. Confira preço, disponibilidade e vendedor na Amazon.';box.append(amazonLink,amazonNotice);
+  const amazonNotice=document.createElement('p');amazonNotice.textContent='Publicidade · link de afiliado.';box.append(amazonLink,amazonNotice);
 
   const footer=document.querySelector('body > footer');if(footer)footer.before(box);else document.body.append(box);
  }
