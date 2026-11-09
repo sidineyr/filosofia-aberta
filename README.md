@@ -35,7 +35,7 @@ Isso não constitui um currículo único nem uma lista exaustiva de instituiçõ
 
 ## Arquitetura
 
-O projeto é um site estático, sem rastreamento e sem dependências de produção.
+O projeto é um site estático, com contador externo de acessos e sem dependências de produção.
 
 ```text
 content/site-data.mjs   conteúdo estruturado e fontes
@@ -76,3 +76,8 @@ Concepção e autoria: **Sidiney Rodrigues**.
 Conteúdo autoral do projeto: **CC BY 4.0**, salvo indicação diferente. Textos e plataformas de terceiros preservam suas próprias licenças, direitos e condições. Traduções produzidas para orientação são marcadas como “tradução de trabalho” e não substituem edições publicadas.
 
 Desenvolvimento e revisão técnica/editorial com apoio de inteligência artificial da **OpenAI**. Isso não implica parceria, certificação ou endosso das instituições citadas.
+
+
+## Contador de acessos (16/10/2026)
+
+A página inicial exibe um contador público Hits, chave `sidineyr.github.io/filosofia-aberta`. Conta carregamentos do indicador desde a instalação, não pessoas únicas. O serviço externo recebe dados técnicos da conexão; nenhuma resposta de atividade é enviada. O portfólio consulta o total pela API de estatísticas, sem carregar o SVG e sem acrescentar acessos. Histórico anterior à instalação não foi estimado.
